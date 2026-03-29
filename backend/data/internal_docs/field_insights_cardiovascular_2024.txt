@@ -1,0 +1,34 @@
+Field Insights: Cardiovascular Market - Q4 2024
+
+Regional Performance:
+- North America: SGLT2 inhibitors gaining traction beyond diabetes, now 40% of scripts for heart failure
+- Europe: ESC guidelines update driving Entresto adoption, +25% QoQ growth
+- Asia-Pacific: Generic statins dominate, but PCSK9i penetration below 2% despite high CVD burden
+
+Competitor Intelligence:
+- Novo Nordisk's semaglutide: Cardiologists prescribing off-label for CV risk reduction
+- Amgen's Repatha: Struggling with payer pushback despite FOURIER trial data
+- Boehringer's Jardiance: Filed for expansion into CKD indication, expected approval Q1 2025
+
+Physician Feedback:
+- "We need more affordable lipid-lowering options beyond statins. PCSK9 inhibitors are clinically effective but commercially unviable for most patients."
+- "Heart failure with preserved ejection fraction (HFpEF) is underserved. Only Entresto showing promise, but we need more options."
+- "Digital health integration is critical. Patients want smart monitoring, not just pills."
+
+Unmet Needs:
+1. Affordable PCSK9 alternatives or biosimilars
+2. HFpEF therapies with diverse mechanisms of action
+3. Combination therapies for polypharmacy reduction
+4. Long-acting formulations for adherence improvement
+
+Market Opportunity:
+- HFpEF: $8B global market, 8% CAGR (2024-2029)
+- PCSK9 biosimilars: $2B opportunity if priced below $200/month
+- Digital therapeutics combined with pharma: Emerging, high payer interest
+- Repurposing potential: Metformin for CV protection, Colchicine for post-MI inflammation
+
+Key Data Points:
+- Cardiovascular disease remains the leading cause of death globally (17.9M deaths/year)
+- Heart failure prevalence: 64 million people worldwide
+- Annual cost of CVD in the US: $363 billion (2021 data, projected to reach $490B by 2030)
+- Generic penetration in lipid-lowering: 87% by volume, but only 45% by revenue

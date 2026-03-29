@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Patent Landscape — {{ drug_name }}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0f1a;
+    color: #e2e8f0;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm 18mm;
+    page-break-after: always;
+    background: linear-gradient(180deg, #0a0f1a 0%, #060912 100%);
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* Cover header */
+  .cover-header {
+    text-align: center;
+    padding: 30px 0 20px;
+    border-bottom: 2px solid #FFE600;
+    margin-bottom: 24px;
+  }
+  .cover-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFE600;
+    margin-bottom: 8px;
+  }
+  .cover-header .subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    font-weight: 400;
+  }
+  .cover-header .drug-name {
+    font-size: 22px;
+    color: #00D4AA;
+    font-weight: 600;
+    margin-top: 12px;
+  }
+
+  /* Section headers */
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFE600;
+    margin: 20px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1a2332;
+  }
+
+  /* Summary card */
+  .summary-card {
+    background: #0d1829;
+    border: 1px solid #1a2332;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    color: #cbd5e1;
+    font-size: 12px;
+  }
+
+  /* FTO summary grid */
+  .fto-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .fto-card {
+    background: #0d1829;
+    border: 1px solid #1a2332;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .fto-card .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .fto-card .label { font-size: 10px; color: #94a3b8; margin-top: 4px; }
+  .fto-high .count { color: #FF4757; }
+  .fto-medium .count { color: #FFB800; }
+  .fto-low .count { color: #FFE600; }
+  .fto-clear .count { color: #00D4AA; }
+
+  /* Patent table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
+  th {
+    background: #1a2332;
+    color: #FFE600;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 6px;
+    border-bottom: 2px solid #FFE600;
+  }
+  td {
+    padding: 7px 6px;
+    border-bottom: 1px solid #1a2332;
+    color: #cbd5e1;
+  }
+  tr:nth-child(even) td { background: rgba(13, 24, 41, 0.5); }
+  .risk-high { color: #FF4757; font-weight: 600; }
+  .risk-medium { color: #FFB800; font-weight: 600; }
+  .risk-low { color: #FFE600; }
+  .risk-clear { color: #00D4AA; }
+
+  /* Top filers */
+  .filer-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .filer-name {
+    width: 180px;
+    font-size: 10px;
+    color: #cbd5e1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .filer-bar-track {
+    flex: 1;
+    height: 16px;
+    background: #1a2332;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: 8px;
+  }
+  .filer-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00D4AA, #FFE600);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    font-weight: 600;
+    color: #0a0f1a;
+  }
+
+  /* Expiring soon alert */
+  .expiry-alert {
+    background: rgba(255, 71, 87, 0.1);
+    border: 1px solid rgba(255, 71, 87, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  .expiry-alert h3 {
+    color: #FF4757;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .expiry-item {
+    color: #fca5a5;
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    color: #475569;
+    font-size: 9px;
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #1a2332;
+  }
+</style>
+</head>
+<body>
+  <!-- Page 1: Cover + FTO Summary + Patents Table -->
+  <div class="page">
+    <div class="cover-header">
+      <h1>Patent Landscape Report</h1>
+      <div class="subtitle">Competitive Filing Analysis & FTO Assessment</div>
+      <div class="drug-name">{{ drug_name }}</div>
+    </div>
+
+    <div class="summary-card">{{ summary }}</div>
+
+    <div class="section-title">FTO Risk Summary</div>
+    <div class="fto-grid">
+      <div class="fto-card fto-high">
+        <div class="count">{{ fto_summary.get('high', 0) }}</div>
+        <div class="label">HIGH RISK</div>
+      </div>
+      <div class="fto-card fto-medium">
+        <div class="count">{{ fto_summary.get('medium', 0) }}</div>
+        <div class="label">MEDIUM RISK</div>
+      </div>
+      <div class="fto-card fto-low">
+        <div class="count">{{ fto_summary.get('low', 0) }}</div>
+        <div class="label">LOW RISK</div>
+      </div>
+      <div class="fto-card fto-clear">
+        <div class="count">{{ fto_summary.get('clear', 0) }}</div>
+        <div class="label">CLEAR / EXPIRED</div>
+      </div>
+    </div>
+
+    {% if expiring_soon %}
+    <div class="expiry-alert">
+      <h3>Patents Expiring Soon (Biosimilar/Generic Entry Window)</h3>
+      {% for exp in expiring_soon %}
+      <div class="expiry-item">{{ exp.patent }} — Expiry: {{ exp.expiry }} ({{ exp.years_left|round(1) if exp.years_left else '?' }} years remaining)</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="section-title">Patent Filings ({{ total_patents }} total)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Patent #</th>
+          <th>Title</th>
+          <th>Filed</th>
+          <th>Expiry</th>
+          <th>Assignee</th>
+          <th>FTO Risk</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in patents[:15] %}
+        <tr>
+          <td style="font-family: JetBrains Mono, monospace;">{{ p.patent_num }}</td>
+          <td>{{ p.title }}</td>
+          <td>{{ p.filed }}</td>
+          <td>{{ p.expiry }}</td>
+          <td>{{ p.assignee }}</td>
+          <td class="risk-{{ p.fto_risk|lower }}">{{ p.fto_risk }}</td>
+          <td>{{ p.status }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if top_filers %}
+    <div class="section-title">Top Competitive Filers</div>
+    {% set max_count = top_filers.values()|list|max if top_filers.values()|list else 1 %}
+    {% for filer, count in top_filers.items() %}
+    <div class="filer-bar">
+      <div class="filer-name">{{ filer }}</div>
+      <div class="filer-bar-track">
+        <div class="filer-bar-fill" style="width: {{ (count / max_count * 100)|round }}%;">{{ count }}</div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <div class="footer">
+      Generated by Repurpose.AI Patent Landscape Agent | {{ generated_at }}<br>
+      Data sources: USPTO PatentsView, Orange Book | For research purposes only
+    </div>
+  </div>
+</body>
+</html>

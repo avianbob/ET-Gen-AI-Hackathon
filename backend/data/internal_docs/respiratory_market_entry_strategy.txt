@@ -1,0 +1,57 @@
+INTERNAL DOCUMENT — CONFIDENTIAL
+Respiratory Market Entry Strategy 2025
+
+1. Market Overview
+The global respiratory therapeutics market is valued at $55.2 billion (2024) and projected to reach $78.5 billion by 2030 (CAGR 6.0%).
+
+Key segments:
+- Asthma: $25.3B — dominated by biologics (Dupixent, Nucala, Fasenra)
+- COPD: $18.7B — triple therapy era (Trelegy, Breztri)
+- Idiopathic Pulmonary Fibrosis (IPF): $5.8B — high unmet need
+- Cystic Fibrosis: $5.1B — Trikafta dominance by Vertex
+
+2. Repurposing Opportunity Assessment
+
+A. Metformin for COPD
+Evidence level: Moderate (5 observational studies, 2 pilot RCTs)
+Mechanism: Anti-inflammatory effects via AMPK activation; reduction in airway remodeling
+Key publications:
+- Hitchings et al., Lancet Respir Med 2021: pilot RCT showed 25% reduction in exacerbations
+- Polverino et al., Am J Respir Crit Care Med 2023: metformin reduced inflammatory markers (IL-6, TNF-α) in COPD patients with comorbid diabetes
+Market opportunity: Estimated $2.1B for COPD patients with metabolic comorbidities
+Competitor landscape: Low — no major pharma pursuing this approach
+Unmet need score: 72/100
+Recommendation: STRONG — initiate Phase 2 clinical trial targeting COPD patients with metabolic syndrome
+
+B. Losartan for Pulmonary Fibrosis
+Evidence level: Low-Moderate (preclinical + case series)
+Mechanism: TGF-β signaling inhibition via AT1 receptor blockade; reduction in collagen deposition
+Preclinical data: 40% reduction in lung fibrosis score in bleomycin mouse model
+Market opportunity: $1.5B — IPF patients who fail or cannot tolerate nintedanib/pirfenidone
+Current SOC limitations: Nintedanib causes diarrhea (62%); pirfenidone causes photosensitivity (42%) and GI effects
+Advantage: Losartan has decades of safety data, costs <$30/month
+Unmet need score: 85/100
+Recommendation: MODERATE — need Phase 2 proof-of-concept before significant investment
+
+C. Sildenafil for Pulmonary Arterial Hypertension (already approved — extension)
+Current status: Revatio approved for PAH Group 1
+Opportunity: PAH Group 3 (associated with lung disease) — growing unmet need
+Market expansion: Additional $800M opportunity if Group 3 indication secured
+Recommendation: Discuss sNDA pathway with regulatory affairs
+
+3. Regional Strategy
+- India: Priority market for COPD repurposing (high disease burden, price-sensitive market, strong API manufacturing base)
+- US/EU: Premium pricing for IPF indication
+- Japan: Respiratory biologics market growing 12% annually — partnership opportunity
+
+4. Competitive Intelligence
+Key watch-list companies:
+- Boehringer Ingelheim: Dominant in IPF (nintedanib); expanding to ILD
+- AstraZeneca: Tezepelumab for severe asthma; COPD biologics pipeline
+- GSK: Nucala lifecycle management; inhaler portfolio restructuring
+- Sanofi/Regeneron: Dupixent expansion into COPD
+
+5. Next Steps
+Q1 2025: Complete feasibility study for metformin-COPD trial
+Q2 2025: Seek academic partnerships for losartan-IPF proof-of-concept
+Q3 2025: Submit IND if metformin-COPD data supports progression

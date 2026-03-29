@@ -1,0 +1,74 @@
+Biosimilar Opportunity Assessment - Strategic Playbook
+Date: November 2024
+
+Executive Summary:
+The biosimilar market is projected to reach $60B by 2028 (12% CAGR). Key drivers include patent cliffs, payer pressure, and regulatory harmonization. Focus areas are high-value biologics with patents expiring 2025-2028.
+
+Top 5 Biosimilar Opportunities (by 2028 revenue potential):
+
+1. Stelara (ustekinumab) - Johnson and Johnson
+   - Patent expiry: 2023 (US), 2024 (EU)
+   - Peak sales: $9.1B (2022)
+   - Indication: Psoriasis, Crohn's disease, Ulcerative Colitis
+   - Complexity: Moderate (monoclonal antibody)
+   - Competition: Amgen, Samsung Bioepis filed applications
+   - Assessment: ENTER - Strong IP position, compelling clinical package
+
+2. Eylea (aflibercept) - Regeneron
+   - Patent expiry: 2023 (first patents), 2027 (composition of matter)
+   - Peak sales: $8.5B
+   - Indication: Wet AMD, Diabetic Macular Edema
+   - Complexity: High (fusion protein, ophthalmic delivery)
+   - Competition: Limited biosimilar activity due to high complexity
+   - Assessment: MONITOR - High barrier but high reward
+
+3. Prolia/Xgeva (denosumab) - Amgen
+   - Patent expiry: 2025-2026
+   - Combined sales: $6.5B
+   - Indication: Osteoporosis, bone metastases
+   - Complexity: Moderate (monoclonal antibody)
+   - Competition: High interest from Indian and Chinese CDMOs
+   - Assessment: ENTER IF FAST - First-to-market advantage critical
+
+4. Xolair (omalizumab) - Genentech/Roche
+   - Patent expiry: 2024-2025
+   - Sales: $3.2B
+   - Indication: Asthma, Chronic Spontaneous Urticaria
+   - Complexity: Moderate (monoclonal antibody)
+   - Competition: Multiple developers in Phase III
+   - Assessment: PASS - Crowded, limited differentiation opportunity
+
+5. Simponi (golimumab) - Johnson and Johnson
+   - Patent expiry: 2024
+   - Sales: $2.1B
+   - Indication: Rheumatoid Arthritis, Ankylosing Spondylitis, Psoriatic Arthritis
+   - Complexity: Moderate (TNF-alpha inhibitor)
+   - Assessment: NICHE PLAY - Target EU first, US follow-on
+
+Regional Strategy:
+- US: Pursue interchangeability designation for injectables
+- EU: Leverage EMA streamlined pathway for faster time-to-market
+- Emerging Markets: Partner with local manufacturers (India, Brazil, China)
+
+Development Approach:
+- Analytical similarity: Invest in advanced characterization (glycosylation mapping)
+- Clinical: Leverage PK/PD bridging studies, minimize Phase III
+- Manufacturing: CMO partnerships vs in-house (decision based on volume forecasts)
+
+Financial Projections:
+- Development cost per biosimilar: $100-200M (vs $1-2B for originator)
+- Time-to-market: 6-8 years from program start
+- Expected pricing: 30-50% discount to originator
+- Market share at peak: 10-30% depending on therapeutic area
+
+Risks:
+- Regulatory delays (especially interchangeability in US)
+- Originator lifecycle management (new formulations, indications)
+- Payer contracting complexity (rebates, formulary positioning)
+- Manufacturing scale-up challenges (yields, consistency)
+
+Next Steps:
+1. Prioritize top 3 targets for BD team evaluation
+2. Initiate CMO discussions (Samsung Biologics, Fujifilm, Biocon)
+3. Regulatory intelligence: Track FDA biosimilar approvals monthly
+4. Competitive intelligence: Monitor ClinicalTrials.gov and EudraCT

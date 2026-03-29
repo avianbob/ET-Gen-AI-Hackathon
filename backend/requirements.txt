@@ -1,0 +1,43 @@
+# --- PharmAI Agentic Host (legacy /api/run-agent) ---
+fastapi==0.124.0
+uvicorn[standard]==0.38.0
+python-dotenv==1.2.1
+pydantic[email]==2.12.5
+email-validator>=2.0.0
+google-generativeai>=0.3.0
+fpdf2>=2.7.0
+python-pptx>=0.6.21
+requests>=2.31.0
+groq>=0.4.0
+gunicorn>=20.1.0
+
+# --- Repurpose platform (search, chat, LangGraph, vector DB, exports) ---
+python-multipart>=0.0.6
+websockets>=16.0
+pydantic-settings>=2.3.0
+langgraph==1.0.10
+langchain==1.2.10
+langchain-core==1.2.17
+langchain-google-genai==4.2.1
+langchain-community==0.4.1
+langsmith==0.7.11
+# 3.10+ required: langchain-google-genai expects aiohttp.ClientConnectorDNSError (not in 3.9.x)
+aiohttp>=3.10.11,<4
+biopython==1.83
+reportlab==4.0.9
+matplotlib>=3.7.0
+pillow>=10.0.0
+PyPDF2==3.0.1
+playwright==1.40.0
+jinja2==3.1.2
+numpy==1.26.3
+openpyxl>=3.1.0
+chromadb==0.4.22
+sentence-transformers==2.3.1
+motor==3.3.2
+pymongo==4.6.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Supabase (Postgres + RLS; optional tables: user_integrations, search_history, …)
+supabase>=2.8.0,<3

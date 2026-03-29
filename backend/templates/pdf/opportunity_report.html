@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ drug_name }} - {{ indication }} Opportunity Report</title>
+    <style>
+        /* ============================================================
+           REPURPOSE.AI - SINGLE OPPORTUNITY MINI REPORT
+           Version: 1.0 - Dark Theme (matches full report v3.0)
+           ============================================================ */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+        /* ==================== CSS RESET & PAGE SETUP ==================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page { size: 8.5in 11in; margin: 0; }
+
+        :root {
+            --bg-primary: #0a0f1a;
+            --bg-darker: #060912;
+            --bg-navy: #0d1829;
+            --bg-slate: #1a2332;
+            --bg-card: rgba(26, 35, 50, 0.7);
+            --bg-glass: rgba(255, 255, 255, 0.05);
+            --yellow: #FFE600;
+            --teal: #00D4AA;
+            --cyan: #00B4D8;
+            --purple: #8B5CF6;
+            --emerald: #10B981;
+            --gold: #FBBF24;
+            --border: #243044;
+            --border-light: rgba(255, 255, 255, 0.10);
+            --border-yellow: rgba(255, 230, 0, 0.30);
+            --border-teal: rgba(0, 212, 170, 0.30);
+            --border-cyan: rgba(0, 180, 216, 0.30);
+            --border-purple: rgba(139, 92, 246, 0.30);
+            --text-primary: #FFFFFF;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            --text-accent: #FFE600;
+            --conf-very-high: #00D4AA;
+            --conf-high: #4ADE80;
+            --conf-moderate: #FFE600;
+            --conf-low: #FFB800;
+            --conf-very-low: #FF4757;
+            --dim-scientific: #00D4E8;
+            --dim-market: #10B981;
+            --dim-competitive: #FBBF24;
+            --dim-feasibility: #8B5CF6;
+            --success: #00D4AA;
+            --warning: #FFB800;
+            --error: #FF4757;
+            --info: #00B4D8;
+            --page-width: 8.5in;
+            --page-height: 11in;
+            --mx: 44px;
+            --mt: 44px;
+            --mb: 52px;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        /* ==================== PAGE BASE ==================== */
+        .page {
+            width: var(--page-width);
+            height: var(--page-height);
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+            background: var(--bg-primary);
+        }
+        .page:last-child { page-break-after: avoid; }
+
+        .page-content {
+            padding: var(--mt) var(--mx) var(--mb);
+            height: calc(var(--page-height) - 48px - 42px);
+            overflow: hidden;
+        }
+
+        /* ==================== PAGE HEADER ==================== */
+        .page-header {
+            height: 48px;
+            background: var(--bg-darker);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 var(--mx);
+            border-bottom: 2px solid var(--yellow);
+        }
+        .header-logo {
+            display: flex; align-items: center; gap: 8px;
+            color: white; font-weight: 700; font-size: 13px;
+        }
+        .header-logo-icon {
+            width: 24px; height: 24px;
+            background: linear-gradient(135deg, var(--yellow) 0%, var(--gold) 100%);
+            border-radius: 5px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .header-logo-icon svg { width: 14px; height: 14px; fill: none; stroke: var(--bg-primary); stroke-width: 2.5; }
+        .header-logo span { color: var(--yellow); }
+        .header-section-title {
+            font-size: 10px; color: var(--text-muted); font-weight: 500;
+            text-transform: uppercase; letter-spacing: 1.5px;
+        }
+
+        /* ==================== PAGE FOOTER ==================== */
+        .page-footer {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 42px;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 var(--mx);
+            background: var(--bg-darker);
+            border-top: 1px solid var(--border);
+        }
+        .footer-left { display: flex; align-items: center; gap: 8px; }
+        .footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--yellow); }
+        .footer-text { font-size: 9px; color: var(--text-muted); font-weight: 500; letter-spacing: 0.5px; }
+        .footer-page {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px; color: var(--text-muted); font-weight: 500;
+        }
+
+        /* ==================== SECTION HEADERS ==================== */
+        .section-title {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 16px;
+        }
+        .section-number {
+            background: var(--yellow);
+            color: var(--bg-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px; font-weight: 700;
+            padding: 3px 10px;
+            border-radius: var(--radius-sm);
+        }
+        .section-label {
+            font-size: 18px; font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
+        }
+
+        /* ==================== DARK CARDS ==================== */
+        .dark-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+        }
+        .dark-card--yellow { border-left: 3px solid var(--yellow); }
+        .dark-card--teal { border-left: 3px solid var(--teal); }
+        .dark-card--cyan { border-left: 3px solid var(--cyan); }
+        .dark-card--purple { border-left: 3px solid var(--purple); }
+        .dark-card--red { border-left: 3px solid var(--error); }
+        .dark-card--solid { background: var(--bg-slate); border: 1px solid var(--border); }
+
+        .dark-card-title {
+            font-size: 11px; font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        /* ==================== DARK TABLES ==================== */
+        .dark-table {
+            width: 100%; border-collapse: collapse; font-size: 10px;
+        }
+        .dark-table thead { background: var(--bg-navy); }
+        .dark-table th {
+            color: var(--text-secondary); font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            font-size: 9px; padding: 8px 10px;
+            text-align: left; border-bottom: 1px solid var(--border);
+        }
+        .dark-table td {
+            color: var(--text-primary); padding: 7px 10px;
+            border-bottom: 1px solid rgba(36, 48, 68, 0.5);
+            vertical-align: middle;
+        }
+        .dark-table tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.015); }
+        .dark-table .mono {
+            font-family: 'JetBrains Mono', monospace; font-weight: 600;
+        }
+
+        /* ==================== BADGES ==================== */
+        .badge {
+            display: inline-block; font-size: 9px; font-weight: 600;
+            padding: 2px 8px; border-radius: 10px; letter-spacing: 0.3px;
+        }
+        .badge--very-high { background: rgba(0,212,170,0.15); color: var(--conf-very-high); border: 1px solid rgba(0,212,170,0.3); }
+        .badge--high { background: rgba(74,222,128,0.15); color: var(--conf-high); border: 1px solid rgba(74,222,128,0.3); }
+        .badge--moderate { background: rgba(255,230,0,0.15); color: var(--conf-moderate); border: 1px solid rgba(255,230,0,0.3); }
+        .badge--low { background: rgba(255,184,0,0.15); color: var(--conf-low); border: 1px solid rgba(255,184,0,0.3); }
+        .badge--very-low { background: rgba(255,71,87,0.15); color: var(--conf-very-low); border: 1px solid rgba(255,71,87,0.3); }
+        .badge--yellow { background: rgba(255,230,0,0.12); color: var(--yellow); border: 1px solid var(--border-yellow); }
+        .badge--teal { background: rgba(0,212,170,0.12); color: var(--teal); border: 1px solid var(--border-teal); }
+        .badge--cyan { background: rgba(0,180,216,0.12); color: var(--cyan); border: 1px solid var(--border-cyan); }
+        .badge--purple { background: rgba(139,92,246,0.12); color: var(--purple); border: 1px solid var(--border-purple); }
+        .badge--red { background: rgba(255,71,87,0.12); color: var(--error); border: 1px solid rgba(255,71,87,0.3); }
+        .badge--neutral { background: rgba(100,116,139,0.15); color: var(--text-secondary); border: 1px solid rgba(100,116,139,0.3); }
+
+        .pill {
+            display: inline-block; font-size: 9px; font-weight: 500;
+            padding: 2px 8px; border-radius: 4px;
+            background: var(--bg-navy); color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .pill--teal { background: rgba(0,212,170,0.1); color: var(--teal); border-color: var(--border-teal); }
+        .pill--cyan { background: rgba(0,180,216,0.1); color: var(--cyan); border-color: var(--border-cyan); }
+        .pill--purple { background: rgba(139,92,246,0.1); color: var(--purple); border-color: var(--border-purple); }
+        .pill--red { background: rgba(255,71,87,0.1); color: var(--error); border-color: rgba(255,71,87,0.3); }
+
+        /* ==================== DIMENSION BARS ==================== */
+        .dim-bar { margin-bottom: 8px; }
+        .dim-bar__header {
+            display: flex; align-items: center; gap: 6px; margin-bottom: 3px;
+        }
+        .dim-bar__dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .dim-bar__label { font-size: 10px; font-weight: 600; color: var(--text-secondary); flex: 1; }
+        .dim-bar__weight { font-size: 9px; color: var(--text-muted); font-weight: 500; }
+        .dim-bar__value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px; font-weight: 700;
+        }
+        .dim-bar__weighted { font-size: 9px; font-weight: 500; color: var(--text-muted); }
+        .dim-bar__track { height: 4px; background: var(--bg-navy); border-radius: 2px; overflow: hidden; }
+        .dim-bar__fill { height: 100%; border-radius: 2px; }
+        .dim-bar__fill--sci { background: var(--dim-scientific); }
+        .dim-bar__fill--mkt { background: var(--dim-market); }
+        .dim-bar__fill--comp { background: var(--dim-competitive); }
+        .dim-bar__fill--feas { background: var(--dim-feasibility); }
+
+        /* ==================== STAT CARDS ==================== */
+        .stat-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 14px 16px; text-align: center;
+        }
+        .stat-card__value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 22px; font-weight: 700;
+        }
+        .stat-card__label {
+            font-size: 8px; font-weight: 600; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 1.5px; margin-top: 2px;
+        }
+        .stat-card--yellow { border-top: 3px solid var(--yellow); }
+        .stat-card--yellow .stat-card__value { color: var(--yellow); }
+        .stat-card--teal { border-top: 3px solid var(--teal); }
+        .stat-card--teal .stat-card__value { color: var(--teal); }
+        .stat-card--cyan { border-top: 3px solid var(--cyan); }
+        .stat-card--cyan .stat-card__value { color: var(--cyan); }
+        .stat-card--purple { border-top: 3px solid var(--purple); }
+        .stat-card--purple .stat-card__value { color: var(--purple); }
+
+        /* ==================== INSIGHT ITEMS ==================== */
+        .insight-item {
+            display: flex; gap: 8px; padding: 6px 0;
+            border-bottom: 1px solid rgba(36, 48, 68, 0.4);
+        }
+        .insight-item:last-child { border-bottom: none; }
+        .insight-icon {
+            width: 18px; height: 18px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; flex-shrink: 0; margin-top: 1px;
+        }
+        .insight-icon--strength { background: rgba(0,212,170,0.15); color: var(--teal); }
+        .insight-icon--risk { background: rgba(255,71,87,0.15); color: var(--error); }
+        .insight-icon--step { background: rgba(0,180,216,0.15); color: var(--cyan); }
+        .insight-title { font-size: 10px; font-weight: 600; color: var(--text-primary); }
+        .insight-desc { font-size: 9px; color: var(--text-secondary); margin-top: 1px; line-height: 1.4; }
+        .insight-meta { font-size: 8px; color: var(--text-muted); font-style: italic; margin-top: 1px; }
+
+        /* ==================== SAFETY METER ==================== */
+        .safety-meter { margin-top: 6px; }
+        .safety-meter__track {
+            height: 8px; background: var(--bg-navy);
+            border-radius: 4px; position: relative; overflow: hidden;
+        }
+        .safety-meter__fill { height: 100%; border-radius: 4px; position: absolute; top: 0; }
+        .safety-meter__center {
+            position: absolute; top: 0; bottom: 0;
+            left: 50%; width: 2px; background: var(--text-muted);
+        }
+        .safety-meter__labels {
+            display: flex; justify-content: space-between;
+            font-size: 8px; color: var(--text-muted); margin-top: 2px;
+        }
+
+        /* ==================== COMPARATOR CARDS ==================== */
+        .comparator-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+        }
+        .comparator-card__name { font-size: 11px; font-weight: 600; color: var(--text-primary); }
+        .comparator-card__mech { font-size: 9px; color: var(--text-secondary); margin-top: 1px; }
+        .comparator-card__details {
+            margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px 12px;
+        }
+        .comparator-card__detail { font-size: 9px; color: var(--text-muted); }
+        .comparator-card__detail strong { color: var(--text-secondary); font-weight: 600; }
+
+        /* ==================== ADVANTAGE ROWS ==================== */
+        .advantage-row {
+            display: flex; align-items: flex-start; gap: 8px;
+            padding: 5px 0; border-bottom: 1px solid rgba(36, 48, 68, 0.3);
+        }
+        .advantage-row:last-child { border-bottom: none; }
+        .advantage-impact {
+            font-size: 8px; font-weight: 700; padding: 1px 6px; border-radius: 3px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            flex-shrink: 0; margin-top: 1px;
+        }
+        .advantage-impact--high { background: rgba(0,212,170,0.15); color: var(--teal); }
+        .advantage-impact--medium { background: rgba(255,230,0,0.15); color: var(--yellow); }
+        .advantage-impact--low { background: rgba(100,116,139,0.15); color: var(--text-secondary); }
+        .advantage-text { font-size: 9px; color: var(--text-primary); flex: 1; }
+        .advantage-compare { font-size: 8px; color: var(--text-muted); margin-top: 2px; }
+        .advantage-benefit { font-size: 8px; color: var(--teal); font-style: italic; margin-top: 1px; }
+
+        /* ==================== PUBLICATION CARDS ==================== */
+        .pub-card {
+            background: var(--bg-glass); border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm); padding: 8px 10px; margin-bottom: 6px;
+        }
+        .pub-card:last-child { margin-bottom: 0; }
+        .pub-title { font-size: 10px; font-weight: 600; color: var(--cyan); line-height: 1.3; }
+        .pub-meta { font-size: 9px; color: var(--text-secondary); margin-top: 2px; }
+        .pub-finding { font-size: 9px; color: var(--text-muted); margin-top: 3px; font-style: italic; line-height: 1.3; }
+
+        /* ==================== EVIDENCE ITEMS ==================== */
+        .evidence-item {
+            display: flex; align-items: flex-start; gap: 8px;
+            padding: 5px 0; border-bottom: 1px solid rgba(36, 48, 68, 0.3);
+        }
+        .evidence-item:last-child { border-bottom: none; }
+        .evidence-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px; font-weight: 600; color: var(--text-muted);
+            width: 16px; text-align: right; flex-shrink: 0; margin-top: 1px;
+        }
+        .evidence-content { flex: 1; min-width: 0; }
+        .evidence-title { font-size: 9px; font-weight: 500; color: var(--text-primary); line-height: 1.3; }
+        .evidence-summary { font-size: 8px; color: var(--text-muted); margin-top: 1px; line-height: 1.3; }
+        .evidence-tags { display: flex; gap: 4px; margin-top: 2px; flex-wrap: wrap; }
+        .evidence-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px; font-weight: 600; flex-shrink: 0; margin-top: 1px;
+        }
+
+        /* ==================== SOURCE BARS ==================== */
+        .source-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+        .source-bar__name { font-size: 9px; color: var(--text-secondary); width: 100px; text-align: right; }
+        .source-bar__track { flex: 1; height: 12px; background: var(--bg-navy); border-radius: 3px; overflow: hidden; }
+        .source-bar__fill { height: 100%; border-radius: 3px; }
+        .source-bar__value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px; font-weight: 600; color: var(--text-secondary); width: 60px;
+        }
+
+        /* ==================== PHASE BADGES ==================== */
+        .phase-badge {
+            font-size: 8px; font-weight: 600; padding: 1px 6px;
+            border-radius: 3px; display: inline-block;
+        }
+        .phase-badge--approved { background: rgba(0,212,170,0.15); color: var(--teal); }
+        .phase-badge--phase3, .phase-badge--phase-3 { background: rgba(74,222,128,0.15); color: var(--conf-high); }
+        .phase-badge--phase2, .phase-badge--phase-2 { background: rgba(255,230,0,0.15); color: var(--yellow); }
+        .phase-badge--phase1, .phase-badge--phase-1 { background: rgba(255,184,0,0.15); color: var(--conf-low); }
+        .phase-badge--other { background: rgba(100,116,139,0.15); color: var(--text-secondary); }
+
+        /* ==================== LAYOUT UTILITIES ==================== */
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-4 { gap: 4px; }
+        .gap-6 { gap: 6px; }
+        .gap-8 { gap: 8px; }
+        .gap-10 { gap: 10px; }
+        .gap-12 { gap: 12px; }
+        .gap-16 { gap: 16px; }
+        .gap-20 { gap: 20px; }
+        .flex-1 { flex: 1; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+        .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
+        .grid-5 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 10px; }
+        .grid-6 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; gap: 8px; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .mt-4 { margin-top: 4px; }
+        .mt-8 { margin-top: 8px; }
+        .mt-12 { margin-top: 12px; }
+        .mt-16 { margin-top: 16px; }
+        .mt-20 { margin-top: 20px; }
+        .mb-4 { margin-bottom: 4px; }
+        .mb-8 { margin-bottom: 8px; }
+        .mb-12 { margin-bottom: 12px; }
+        .mb-16 { margin-bottom: 16px; }
+        .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        /* ==================== CONFIDENCE COLORS ==================== */
+        .conf-very-high { color: var(--conf-very-high); }
+        .conf-high { color: var(--conf-high); }
+        .conf-moderate { color: var(--conf-moderate); }
+        .conf-low { color: var(--conf-low); }
+        .conf-very-low { color: var(--conf-very-low); }
+
+        /* ==================== LEVEL COLORS ==================== */
+        .level--very_high, .level--very-high, .level--high { color: var(--teal); }
+        .level--moderate, .level--medium { color: var(--yellow); }
+        .level--low { color: var(--conf-low); }
+
+        /* ==================== COVER (Mini) ==================== */
+        .cover {
+            background: linear-gradient(145deg, var(--bg-primary) 0%, var(--bg-navy) 50%, var(--bg-primary) 100%);
+            position: relative;
+        }
+        .cover-glow {
+            position: absolute; top: -20%; right: -10%;
+            width: 60%; height: 60%;
+            background: radial-gradient(ellipse, rgba(255,230,0,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .cover-glow-2 {
+            position: absolute; bottom: -10%; left: -10%;
+            width: 50%; height: 50%;
+            background: radial-gradient(ellipse, rgba(0,212,170,0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* ==================== TWO-COLUMN LAYOUT ==================== */
+        .two-col { display: flex; gap: 16px; }
+        .two-col__left { width: 55%; }
+        .two-col__right { width: 45%; }
+
+        /* ==================== DETAIL BANNER ==================== */
+        .detail-banner {
+            background: linear-gradient(135deg, var(--bg-navy) 0%, var(--bg-slate) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 20px var(--mx);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .detail-banner__left { display: flex; align-items: center; gap: 14px; }
+        .detail-banner__info {}
+        .detail-banner__name {
+            font-size: 20px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.3px;
+        }
+        .detail-banner__meta {
+            font-size: 10px; color: var(--text-secondary); margin-top: 2px;
+            display: flex; gap: 12px;
+        }
+        .detail-banner__right { display: flex; align-items: center; gap: 16px; }
+        .detail-banner__score-ring { width: 70px; height: 70px; position: relative; }
+        .detail-banner__score-ring svg { transform: rotate(-90deg); width: 100%; height: 100%; }
+        .detail-banner__score-val {
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px; font-weight: 700;
+        }
+
+        /* ==================== DISCLAIMER ==================== */
+        .disclaimer-box {
+            background: rgba(255,230,0,0.04);
+            border: 1px solid var(--border-yellow);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+        }
+        .disclaimer-title { font-size: 11px; font-weight: 700; color: var(--yellow); margin-bottom: 6px; }
+        .disclaimer-text { font-size: 9px; color: var(--text-secondary); line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+         PAGE 1: COVER + SCORING OVERVIEW
+         ============================================================ -->
+    <div class="page cover">
+        <div class="cover-glow"></div>
+        <div class="cover-glow-2"></div>
+
+        <!-- Header -->
+        <div class="page-header">
+            <div class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L12 22M12 2C14.5 4.5 14.5 7.5 12 10C9.5 7.5 9.5 4.5 12 2Z"/></svg>
+                </div>
+                REPURPOSE<span>.AI</span>
+            </div>
+            <div class="header-section-title">Opportunity Report</div>
+        </div>
+
+        <div class="page-content" style="position: relative; z-index: 10;">
+            <!-- Cover Header -->
+            <div style="margin-bottom: 24px;">
+                <div style="font-size: 9px; font-weight: 700; color: var(--yellow); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px;">
+                    Single Opportunity Analysis
+                </div>
+                <div style="font-size: 14px; font-weight: 500; color: var(--text-secondary);">
+                    Drug: <span style="color: var(--yellow); font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 16px;">{{ drug_name }}</span>
+                </div>
+            </div>
+
+            <!-- Opportunity Banner -->
+            <div class="detail-banner" style="border-radius: var(--radius-lg); margin-bottom: 20px; padding: 20px 24px;">
+                <div class="detail-banner__left">
+                    <div class="detail-banner__info">
+                        <div class="detail-banner__name">{{ indication }}</div>
+                        <div class="detail-banner__meta">
+                            <span>{{ evidence_count }} evidence items</span>
+                            <span>{{ source_count }} sources</span>
+                            <span>Data Quality: {{ data_completeness|round }}%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-banner__right">
+                    <div>
+                        <span class="badge badge--{{ confidence_class }}" style="font-size: 10px; padding: 3px 12px;">{{ confidence_label }}</span>
+                    </div>
+                    <div class="detail-banner__score-ring">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="38" fill="none" stroke="var(--border)" stroke-width="5"/>
+                            <circle cx="50" cy="50" r="38" fill="none"
+                                stroke="var(--conf-{{ confidence_class }})"
+                                stroke-width="5" stroke-linecap="round"
+                                stroke-dasharray="{{ (score * 2.39)|round(1) }} 239"/>
+                        </svg>
+                        <div class="detail-banner__score-val conf-{{ confidence_class }}">{{ score|round }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid-4 mb-16">
+                <div class="stat-card stat-card--yellow">
+                    <div class="stat-card__value">{{ score|round(1) }}</div>
+                    <div class="stat-card__label">Overall Score</div>
+                </div>
+                <div class="stat-card stat-card--teal">
+                    <div class="stat-card__value">{{ evidence_count }}</div>
+                    <div class="stat-card__label">Evidence Items</div>
+                </div>
+                <div class="stat-card stat-card--cyan">
+                    <div class="stat-card__value">{{ source_count }}</div>
+                    <div class="stat-card__label">Data Sources</div>
+                </div>
+                <div class="stat-card stat-card--purple">
+                    <div class="stat-card__value">{{ data_completeness|round }}%</div>
+                    <div class="stat-card__label">Data Quality</div>
+                </div>
+            </div>
+
+            <!-- 4D Scoring Breakdown + Radar -->
+            <div class="flex gap-16">
+                <!-- Score Breakdown -->
+                <div class="dark-card dark-card--solid" style="flex: 1.2;">
+                    <div class="dark-card-title">4D Scoring Breakdown</div>
+
+                    <div class="dim-bar">
+                        <div class="dim-bar__header">
+                            <div class="dim-bar__dot" style="background: var(--dim-scientific);"></div>
+                            <div class="dim-bar__label">Scientific Evidence</div>
+                            <div class="dim-bar__weight">({{ scientific_weight|round }}%)</div>
+                            <div class="dim-bar__value" style="color: var(--dim-scientific);">
+                                {{ scientific_score|round(1) }}
+                                <span class="dim-bar__weighted">&rarr; {{ scientific_weighted|round(1) }}</span>
+                            </div>
+                        </div>
+                        <div class="dim-bar__track"><div class="dim-bar__fill dim-bar__fill--sci" style="width: {{ scientific_score }}%;"></div></div>
+                    </div>
+
+                    <div class="dim-bar">
+                        <div class="dim-bar__header">
+                            <div class="dim-bar__dot" style="background: var(--dim-market);"></div>
+                            <div class="dim-bar__label">Market Opportunity</div>
+                            <div class="dim-bar__weight">({{ market_weight|round }}%)</div>
+                            <div class="dim-bar__value" style="color: var(--dim-market);">
+                                {{ market_score|round(1) }}
+                                <span class="dim-bar__weighted">&rarr; {{ market_weighted|round(1) }}</span>
+                            </div>
+                        </div>
+                        <div class="dim-bar__track"><div class="dim-bar__fill dim-bar__fill--mkt" style="width: {{ market_score }}%;"></div></div>
+                    </div>
+
+                    <div class="dim-bar">
+                        <div class="dim-bar__header">
+                            <div class="dim-bar__dot" style="background: var(--dim-competitive);"></div>
+                            <div class="dim-bar__label">Competitive Landscape</div>
+                            <div class="dim-bar__weight">({{ competitive_weight|round }}%)</div>
+                            <div class="dim-bar__value" style="color: var(--dim-competitive);">
+                                {{ competitive_score|round(1) }}
+                                <span class="dim-bar__weighted">&rarr; {{ competitive_weighted|round(1) }}</span>
+                            </div>
+                        </div>
+                        <div class="dim-bar__track"><div class="dim-bar__fill dim-bar__fill--comp" style="width: {{ competitive_score }}%;"></div></div>
+                    </div>
+
+                    <div class="dim-bar" style="margin-bottom: 0;">
+                        <div class="dim-bar__header">
+                            <div class="dim-bar__dot" style="background: var(--dim-feasibility);"></div>
+                            <div class="dim-bar__label">Development Feasibility</div>
+                            <div class="dim-bar__weight">({{ feasibility_weight|round }}%)</div>
+                            <div class="dim-bar__value" style="color: var(--dim-feasibility);">
+                                {{ feasibility_score|round(1) }}
+                                <span class="dim-bar__weighted">&rarr; {{ feasibility_weighted|round(1) }}</span>
+                            </div>
+                        </div>
+                        <div class="dim-bar__track"><div class="dim-bar__fill dim-bar__fill--feas" style="width: {{ feasibility_score }}%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Radar Chart -->
+                <div class="dark-card" style="flex: 0.8;">
+                    <div class="dark-card-title">Dimension Profile</div>
+                    <div style="text-align: center;">
+                        <svg width="170" height="170" viewBox="-100 -100 200 200">
+                            <circle cx="0" cy="0" r="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                            <circle cx="0" cy="0" r="40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                            <circle cx="0" cy="0" r="60" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                            <circle cx="0" cy="0" r="80" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+                            <line x1="0" y1="-80" x2="0" y2="80" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+                            <line x1="-80" y1="0" x2="80" y2="0" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+                            <text x="0" y="-86" text-anchor="middle" fill="var(--text-muted)" font-size="7" font-weight="500">Scientific</text>
+                            <text x="88" y="3" text-anchor="start" fill="var(--text-muted)" font-size="7" font-weight="500">Market</text>
+                            <text x="0" y="92" text-anchor="middle" fill="var(--text-muted)" font-size="7" font-weight="500">Competitive</text>
+                            <text x="-88" y="3" text-anchor="end" fill="var(--text-muted)" font-size="7" font-weight="500">Feasibility</text>
+                            <polygon points="{{ radar_points }}"
+                                fill="var(--cyan)" fill-opacity="0.15"
+                                stroke="var(--cyan)" stroke-width="1.5" stroke-opacity="0.9"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Quick Stats (if available) -->
+            {% if market_size or cagr or patient_population %}
+            <div class="grid-5 mt-16">
+                <div class="stat-card" style="padding: 8px 10px; border-top: 2px solid var(--dim-market);">
+                    <div class="stat-card__value" style="font-size: 14px; color: var(--dim-market);">{% if market_size %}${{ market_size|round(1) }}B{% else %}N/A{% endif %}</div>
+                    <div class="stat-card__label">Market Size</div>
+                </div>
+                <div class="stat-card" style="padding: 8px 10px; border-top: 2px solid var(--teal);">
+                    <div class="stat-card__value" style="font-size: 14px; color: var(--teal);">{% if cagr %}{{ cagr|round(1) }}%{% else %}N/A{% endif %}</div>
+                    <div class="stat-card__label">CAGR</div>
+                </div>
+                <div class="stat-card" style="padding: 8px 10px; border-top: 2px solid var(--cyan);">
+                    <div class="stat-card__value" style="font-size: 14px; color: var(--cyan);">{% if patient_population %}{{ patient_population|round(1) }}M{% else %}N/A{% endif %}</div>
+                    <div class="stat-card__label">Patients</div>
+                </div>
+                <div class="stat-card" style="padding: 8px 10px; border-top: 2px solid var(--yellow);">
+                    <div class="stat-card__value" style="font-size: 14px; color: var(--yellow);">{{ pricing_potential or 'N/A' }}</div>
+                    <div class="stat-card__label">Pricing</div>
+                </div>
+                <div class="stat-card" style="padding: 8px 10px; border-top: 2px solid var(--gold);">
+                    <div class="stat-card__value" style="font-size: 14px; color: var(--gold);">{{ unmet_need or 'N/A' }}</div>
+                    <div class="stat-card__label">Unmet Need</div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-left">
+                <div class="footer-dot"></div>
+                <div class="footer-text">REPURPOSE.AI &mdash; {{ drug_name }} &mdash; {{ indication }}</div>
+            </div>
+            <div class="footer-page">1 / {{ total_pages }}</div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         PAGE 2: INSIGHTS + COMPARATIVE ANALYSIS
+         ============================================================ -->
+    <div class="page">
+        <div class="page-header">
+            <div class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L12 22M12 2C14.5 4.5 14.5 7.5 12 10C9.5 7.5 9.5 4.5 12 2Z"/></svg>
+                </div>
+                REPURPOSE<span>.AI</span>
+            </div>
+            <div class="header-section-title">{{ indication }} &mdash; Insights &amp; Competitive Analysis</div>
+        </div>
+
+        <div class="page-content">
+            <div class="section-title">
+                <span class="section-number">02</span>
+                <span class="section-label">Insights &amp; Comparative Analysis</span>
+            </div>
+
+            <div class="two-col" style="gap: 14px;">
+                <!-- LEFT: Strengths & Risks -->
+                <div class="two-col__left">
+                    {% if strengths_full %}
+                    <div class="dark-card dark-card--teal mb-12">
+                        <div class="dark-card-title">Key Strengths</div>
+                        {% for s in strengths_full[:5] %}
+                        <div class="insight-item">
+                            <div class="insight-icon insight-icon--strength">&check;</div>
+                            <div style="flex: 1; min-width: 0;">
+                                <div class="flex items-center gap-6">
+                                    <div class="insight-title">{{ s.title }}</div>
+                                    {% if s.severity %}
+                                    <span class="badge badge--{% if s.severity == 'high' %}teal{% elif s.severity == 'medium' %}yellow{% else %}neutral{% endif %}" style="font-size: 7px; padding: 1px 5px;">{{ s.severity }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="insight-desc">{{ s.description|truncate(120) }}</div>
+                                {% if s.source_dimension %}<div class="insight-meta">{{ s.source_dimension }}</div>{% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if risks_full %}
+                    <div class="dark-card dark-card--red mb-12">
+                        <div class="dark-card-title">Key Risks</div>
+                        {% for r in risks_full[:5] %}
+                        <div class="insight-item">
+                            <div class="insight-icon insight-icon--risk">!</div>
+                            <div style="flex: 1; min-width: 0;">
+                                <div class="flex items-center gap-6">
+                                    <div class="insight-title">{{ r.title }}</div>
+                                    {% if r.severity %}
+                                    <span class="badge badge--{% if r.severity == 'high' %}red{% elif r.severity == 'medium' %}yellow{% else %}neutral{% endif %}" style="font-size: 7px; padding: 1px 5px;">{{ r.severity }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="insight-desc">{{ r.description|truncate(120) }}</div>
+                                {% if r.source_dimension %}<div class="insight-meta">{{ r.source_dimension }}</div>{% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if next_steps %}
+                    <div class="dark-card dark-card--cyan">
+                        <div class="dark-card-title">Recommended Next Steps</div>
+                        {% for step in next_steps[:4] %}
+                        <div class="insight-item">
+                            <div class="insight-icon insight-icon--step" style="font-size: 9px; font-weight: 700;">{{ loop.index }}</div>
+                            <div style="flex: 1; min-width: 0;">
+                                <div class="insight-title">{{ step.title }}</div>
+                                <div class="insight-desc">{{ step.description|truncate(100) }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- RIGHT: Comparative Analysis -->
+                <div class="two-col__right">
+                    {% if comparator_drugs %}
+                    <div class="dark-card-title" style="margin-bottom: 8px;">Standard of Care Comparators</div>
+                    {% for comp in comparator_drugs[:3] %}
+                    <div class="comparator-card mb-8">
+                        <div class="comparator-card__name">{{ comp.drug_name }}</div>
+                        <div class="comparator-card__mech">{{ comp.mechanism|truncate(50) }}</div>
+                        <div class="comparator-card__details">
+                            <div class="comparator-card__detail"><strong>Route:</strong> {{ comp.administration_route }}</div>
+                            <div class="comparator-card__detail"><strong>Dosing:</strong> {{ comp.dosing_frequency }}</div>
+                            {% if comp.average_monthly_cost %}
+                            <div class="comparator-card__detail"><strong>Cost:</strong> ${{ comp.average_monthly_cost|round }}/mo</div>
+                            {% endif %}
+                            {% if comp.market_share_percent %}
+                            <div class="comparator-card__detail"><strong>Share:</strong> {{ comp.market_share_percent|round(1) }}%</div>
+                            {% endif %}
+                            {% if comp.approval_year %}
+                            <div class="comparator-card__detail"><strong>Approved:</strong> {{ comp.approval_year }}</div>
+                            {% endif %}
+                        </div>
+                        {% if comp.key_side_effects %}
+                        <div style="margin-top: 4px;">
+                            {% for se in comp.key_side_effects %}
+                            <span class="pill pill--red" style="font-size: 8px; margin-right: 2px;">{{ se|truncate(18) }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if comparative_advantages %}
+                    <div class="dark-card dark-card--teal" style="padding: 10px 14px;">
+                        <div class="dark-card-title" style="margin-bottom: 6px;">Key Advantages</div>
+                        {% for adv in comparative_advantages[:5] %}
+                        <div class="advantage-row">
+                            <span class="advantage-impact advantage-impact--{{ adv.impact }}">{{ adv.impact }}</span>
+                            <div style="flex: 1; min-width: 0;">
+                                <div class="advantage-text">{{ adv.description|truncate(90) }}</div>
+                                {% if adv.comparator_value and adv.candidate_value %}
+                                <div class="advantage-compare">
+                                    <span style="color: var(--error);">{{ adv.comparator_value|truncate(30) }}</span> &rarr;
+                                    <span style="color: var(--teal);">{{ adv.candidate_value|truncate(30) }}</span>
+                                </div>
+                                {% endif %}
+                                {% if adv.patient_benefit %}
+                                <div class="advantage-benefit">{{ adv.patient_benefit|truncate(60) }}</div>
+                                {% endif %}
+                            </div>
+                            <span class="badge badge--neutral" style="font-size: 7px; flex-shrink: 0;">{{ adv.category }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if side_effect_comparison %}
+                    <div class="dark-card mt-12" style="padding: 10px 14px;">
+                        <div class="dark-card-title" style="margin-bottom: 6px;">Safety vs {{ side_effect_comparison.comparator_drug }}</div>
+                        <div class="grid-3" style="gap: 8px;">
+                            <div>
+                                <div style="font-size: 8px; color: var(--teal); font-weight: 600; text-transform: uppercase; margin-bottom: 3px;">Eliminated</div>
+                                {% for e in side_effect_comparison.eliminated_effects[:4] %}
+                                <div style="font-size: 8px; color: var(--text-secondary); padding: 1px 0;">
+                                    <span style="color: var(--teal);">&check;</span>
+                                    {% if e is mapping %}{{ e.effect_name|default(e) }}{% else %}{{ e }}{% endif %}
+                                </div>
+                                {% endfor %}
+                                {% if not side_effect_comparison.eliminated_effects %}<div style="font-size: 8px; color: var(--text-muted); font-style: italic;">None identified</div>{% endif %}
+                            </div>
+                            <div>
+                                <div style="font-size: 8px; color: var(--yellow); font-weight: 600; text-transform: uppercase; margin-bottom: 3px;">Reduced</div>
+                                {% for r in side_effect_comparison.reduced_effects[:4] %}
+                                <div style="font-size: 8px; color: var(--text-secondary); padding: 1px 0;">
+                                    <span style="color: var(--yellow);">&darr;</span>
+                                    {% if r is mapping %}{{ r.effect_name|default(r) }}{% else %}{{ r }}{% endif %}
+                                </div>
+                                {% endfor %}
+                                {% if not side_effect_comparison.reduced_effects %}<div style="font-size: 8px; color: var(--text-muted); font-style: italic;">None identified</div>{% endif %}
+                            </div>
+                            <div>
+                                <div style="font-size: 8px; color: var(--error); font-weight: 600; text-transform: uppercase; margin-bottom: 3px;">New Concerns</div>
+                                {% for n in side_effect_comparison.new_concerns[:3] %}
+                                <div style="font-size: 8px; color: var(--text-secondary); padding: 1px 0;">
+                                    <span style="color: var(--error);">!</span>
+                                    {% if n is mapping %}{{ n.effect_name|default(n) }}{% else %}{{ n }}{% endif %}
+                                </div>
+                                {% endfor %}
+                                {% if not side_effect_comparison.new_concerns %}<div style="font-size: 8px; color: var(--text-muted); font-style: italic;">None identified</div>{% endif %}
+                            </div>
+                        </div>
+                        {% if side_effect_comparison.safety_advantage_score is not none %}
+                        <div class="safety-meter" style="margin-top: 8px;">
+                            {% set safety_score = side_effect_comparison.safety_advantage_score %}
+                            {% set safety_pct = ((safety_score + 1) / 2 * 100) %}
+                            <div class="safety-meter__track">
+                                <div class="safety-meter__center"></div>
+                                {% if safety_score >= 0 %}
+                                <div class="safety-meter__fill" style="left: 50%; width: {{ (safety_pct - 50)|abs }}%; background: var(--teal);"></div>
+                                {% else %}
+                                <div class="safety-meter__fill" style="left: {{ safety_pct }}%; width: {{ (50 - safety_pct)|abs }}%; background: var(--error);"></div>
+                                {% endif %}
+                            </div>
+                            <div class="safety-meter__labels">
+                                <span>Worse</span>
+                                <span style="font-weight: 600; color: var({% if safety_score > 0 %}--teal{% elif safety_score < 0 %}--error{% else %}--text-muted{% endif %});">
+                                    Score: {{ safety_score }}
+                                </span>
+                                <span>Better</span>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    {% if not comparator_drugs and not comparative_advantages and not side_effect_comparison %}
+                    <div class="dark-card" style="padding: 20px; text-align: center;">
+                        <div style="font-size: 10px; color: var(--text-muted); font-style: italic;">
+                            Comparative analysis data not available for this opportunity.
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-left">
+                <div class="footer-dot"></div>
+                <div class="footer-text">REPURPOSE.AI &mdash; {{ drug_name }} &mdash; {{ indication }}</div>
+            </div>
+            <div class="footer-page">2 / {{ total_pages }}</div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         PAGE 3: MARKET & SCIENCE
+         ============================================================ -->
+    {% if market_segment or scientific_details %}
+    <div class="page">
+        <div class="page-header">
+            <div class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L12 22M12 2C14.5 4.5 14.5 7.5 12 10C9.5 7.5 9.5 4.5 12 2Z"/></svg>
+                </div>
+                REPURPOSE<span>.AI</span>
+            </div>
+            <div class="header-section-title">{{ indication }} &mdash; Market &amp; Science</div>
+        </div>
+
+        <div class="page-content">
+            <div class="section-title">
+                <span class="section-number">03</span>
+                <span class="section-label">Market Segment &amp; Scientific Details</span>
+            </div>
+
+            <!-- Market Segment -->
+            {% if market_segment %}
+            <div class="dark-card dark-card--teal mb-16" style="padding: 12px 16px;">
+                <div class="dark-card-title" style="margin-bottom: 8px;">Market Segment: {{ market_segment.segment_name }}</div>
+                {% if market_segment.parent_indication %}
+                <div style="font-size: 8px; color: var(--text-muted); margin-bottom: 8px;">Parent: {{ market_segment.parent_indication }}</div>
+                {% endif %}
+                <div class="grid-6 mb-8">
+                    <div class="text-center">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--teal);">
+                            {% if market_segment.segment_size_billions %}${{ market_segment.segment_size_billions|round(1) }}B{% else %}N/A{% endif %}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">Size</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--dim-market);">
+                            {% if market_segment.growth_rate_percent %}{{ market_segment.growth_rate_percent|round(1) }}%{% else %}N/A{% endif %}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">CAGR</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--cyan);">
+                            {% if market_segment.patient_subpopulation %}{{ market_segment.patient_subpopulation }}{% else %}N/A{% endif %}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">Patients</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--yellow);">
+                            {% if market_segment.segment_share_percent %}{{ market_segment.segment_share_percent|round(1) }}%{% else %}N/A{% endif %}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">Share</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-size: 12px; font-weight: 700;" class="level--{{ market_segment.unmet_need|lower|replace(' ', '-') }}">
+                            {{ market_segment.unmet_need }}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">Unmet Need</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-size: 12px; font-weight: 700;" class="level--{{ market_segment.competitive_intensity|lower|replace(' ', '-') }}">
+                            {{ market_segment.competitive_intensity }}
+                        </div>
+                        <div style="font-size: 7px; color: var(--text-muted); text-transform: uppercase;">Competition</div>
+                    </div>
+                </div>
+                {% if market_segment.target_patient_profile %}
+                <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 2px;">Target Patient</div>
+                <div style="font-size: 9px; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.4;">{{ market_segment.target_patient_profile|truncate(200) }}</div>
+                {% endif %}
+                {% if market_segment.key_differentiators %}
+                <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Differentiators</div>
+                <div class="flex gap-4" style="flex-wrap: wrap;">
+                    {% for d in market_segment.key_differentiators %}
+                    <span class="pill pill--teal">{{ d|truncate(25) }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Competitors Table -->
+            {% if competitors %}
+            <div class="dark-card-title" style="margin-bottom: 6px;">Competitive Pipeline ({{ competitor_count }} competitors)</div>
+            <table class="dark-table mb-16" style="font-size: 9px;">
+                <thead>
+                    <tr>
+                        <th>Drug</th>
+                        <th>Company</th>
+                        <th style="width: 80px;">Phase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in competitors[:8] %}
+                    <tr>
+                        <td style="font-weight: 500;">{{ c.drug }}</td>
+                        <td style="color: var(--text-secondary);">{{ c.company }}</td>
+                        <td>
+                            {% set phase_lower = c.phase|lower|replace(' ', '') %}
+                            <span class="phase-badge phase-badge--{% if 'approved' in phase_lower %}approved{% elif 'phase3' in phase_lower or 'phase 3' in phase_lower %}phase3{% elif 'phase2' in phase_lower or 'phase 2' in phase_lower %}phase2{% elif 'phase1' in phase_lower or 'phase 1' in phase_lower %}phase1{% else %}other{% endif %}">{{ c.phase }}</span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+
+            <!-- Scientific Details -->
+            {% if scientific_details %}
+            <div class="dark-card dark-card--purple">
+                <div class="dark-card-title">Scientific Mechanism</div>
+
+                <div style="font-size: 9px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">
+                    {{ scientific_details.mechanism_of_action|truncate(300) }}
+                </div>
+
+                <div class="grid-3 mb-10">
+                    <div>
+                        <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Target Protein</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--dim-scientific);">{{ scientific_details.target_protein }}</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Target Gene</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--dim-scientific);">{{ scientific_details.target_gene }}</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Target Class</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--dim-scientific);">{{ scientific_details.target_class }}</div>
+                    </div>
+                </div>
+
+                {% if scientific_details.binding_affinity_nm %}
+                <div class="flex items-center gap-8 mb-8">
+                    <span style="font-size: 8px; color: var(--text-muted); text-transform: uppercase;">Binding Affinity:</span>
+                    <span class="badge badge--purple">{{ scientific_details.binding_affinity_nm }} nM</span>
+                </div>
+                {% endif %}
+
+                {% if scientific_details.selectivity_profile %}
+                <div style="font-size: 9px; color: var(--text-secondary); margin-bottom: 8px;">
+                    <strong style="color: var(--text-muted); font-size: 8px; text-transform: uppercase;">Selectivity:</strong>
+                    {{ scientific_details.selectivity_profile|truncate(120) }}
+                </div>
+                {% endif %}
+
+                {% if scientific_details.pathways %}
+                <div class="mb-8">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Pathways</div>
+                    <div class="flex gap-4" style="flex-wrap: wrap;">
+                        {% for p in scientific_details.pathways %}
+                        <span class="pill pill--cyan">{{ p|truncate(30) }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if scientific_details.biomarkers %}
+                <div class="mb-8">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Biomarkers</div>
+                    <div class="flex gap-4" style="flex-wrap: wrap;">
+                        {% for b in scientific_details.biomarkers %}
+                        <span class="pill pill--teal">{{ b|truncate(25) }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if scientific_details.preclinical_models %}
+                <div class="mb-8">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Preclinical Models</div>
+                    <div style="font-size: 9px; color: var(--text-secondary);">
+                        {% for m in scientific_details.preclinical_models %}{{ m }}{% if not loop.last %}, {% endif %}{% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if scientific_details.mechanistic_rationale %}
+                <div class="mb-8">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Mechanistic Rationale</div>
+                    <div style="font-size: 9px; color: var(--text-secondary); line-height: 1.4;">
+                        {{ scientific_details.mechanistic_rationale|truncate(250) }}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if scientific_details.clinical_evidence_summary %}
+                <div>
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 3px;">Clinical Evidence</div>
+                    <div style="font-size: 9px; color: var(--text-secondary); line-height: 1.4;">
+                        {{ scientific_details.clinical_evidence_summary|truncate(250) }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Key Publications -->
+            {% if scientific_details.key_publications %}
+            <div class="dark-card-title mt-12" style="margin-bottom: 6px;">Key Publications</div>
+            {% for pub in scientific_details.key_publications[:3] %}
+            <div class="pub-card">
+                <div class="pub-title">{{ pub.title|truncate(100) }}</div>
+                <div class="pub-meta">
+                    {% if pub.authors %}{{ pub.authors|truncate(50) }} &mdash; {% endif %}
+                    {% if pub.journal %}<em>{{ pub.journal }}</em>{% endif %}
+                    {% if pub.year %} ({{ pub.year }}){% endif %}
+                    {% if pub.citation_count %} &mdash; <span style="color: var(--yellow);">{{ pub.citation_count }} citations</span>{% endif %}
+                </div>
+                {% if pub.key_finding %}
+                <div class="pub-finding">"{{ pub.key_finding|truncate(120) }}"</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endif %}
+
+            {% if not market_segment and not scientific_details %}
+            <div class="dark-card" style="padding: 30px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted); font-style: italic;">
+                    Detailed market and scientific analysis data not available for this opportunity.
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-left">
+                <div class="footer-dot"></div>
+                <div class="footer-text">REPURPOSE.AI &mdash; {{ drug_name }} &mdash; {{ indication }}</div>
+            </div>
+            <div class="footer-page">3 / {{ total_pages }}</div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- ============================================================
+         PAGE 4: EVIDENCE CATALOG
+         ============================================================ -->
+    {% set evidence_page = 3 if (market_segment or scientific_details) else 2 %}
+    <div class="page">
+        <div class="page-header">
+            <div class="header-logo">
+                <div class="header-logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L12 22M12 2C14.5 4.5 14.5 7.5 12 10C9.5 7.5 9.5 4.5 12 2Z"/></svg>
+                </div>
+                REPURPOSE<span>.AI</span>
+            </div>
+            <div class="header-section-title">{{ indication }} &mdash; Evidence Catalog</div>
+        </div>
+
+        <div class="page-content">
+            <div class="section-title">
+                <span class="section-number">{% if market_segment or scientific_details %}04{% else %}03{% endif %}</span>
+                <span class="section-label">Evidence Catalog</span>
+            </div>
+
+            <div style="font-size: 10px; color: var(--text-secondary); margin-bottom: 12px;">
+                {{ evidence_count }} evidence items collected from {{ source_count }} data sources supporting
+                <strong style="color: var(--yellow);">{{ drug_name }}</strong> for <strong style="color: var(--cyan);">{{ indication }}</strong>.
+            </div>
+
+            <!-- Source Distribution -->
+            {% if evidence_by_source %}
+            <div class="dark-card mb-12" style="padding: 10px 14px;">
+                <div class="dark-card-title" style="margin-bottom: 6px;">Source Distribution</div>
+                {% for src in evidence_by_source[:8] %}
+                <div class="source-bar">
+                    <div class="source-bar__name">{{ src.name }}</div>
+                    <div class="source-bar__track">
+                        <div class="source-bar__fill" style="width: {{ src.percentage }}%; background: var(--teal); opacity: {{ 0.4 + (src.percentage / 100 * 0.6) }};"></div>
+                    </div>
+                    <div class="source-bar__value">{{ src.count }} ({{ src.percentage|round }}%)</div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Evidence Items -->
+            {% if evidence_full %}
+            <div class="dark-card-title" style="margin-bottom: 6px;">Evidence Items ({{ evidence_count }} total)</div>
+            {% for ev in evidence_full[:15] %}
+            <div class="evidence-item">
+                <div class="evidence-num">{{ loop.index }}</div>
+                <div class="evidence-content">
+                    <div class="evidence-title">{{ ev.title|truncate(80) }}</div>
+                    {% if ev.summary %}<div class="evidence-summary">{{ ev.summary|truncate(100) }}</div>{% endif %}
+                    <div class="evidence-tags">
+                        <span class="pill" style="font-size: 7px;">{{ ev.source }}</span>
+                        {% if ev.date %}<span style="font-size: 7px; color: var(--text-muted);">{{ ev.date }}</span>{% endif %}
+                        {% if ev.metadata.pmid %}<span style="font-size: 7px; color: var(--text-muted);">PMID: {{ ev.metadata.pmid }}</span>{% endif %}
+                        {% if ev.metadata.nct_id %}<span style="font-size: 7px; color: var(--text-muted);">{{ ev.metadata.nct_id }}</span>{% endif %}
+                    </div>
+                </div>
+                <div class="evidence-score conf-{% if ev.relevance >= 80 %}very-high{% elif ev.relevance >= 65 %}high{% elif ev.relevance >= 50 %}moderate{% elif ev.relevance >= 35 %}low{% else %}very-low{% endif %}">
+                    {{ ev.relevance|round }}%
+                </div>
+            </div>
+            {% endfor %}
+
+            {% if evidence_count > 15 %}
+            <div style="font-size: 9px; color: var(--text-muted); margin-top: 8px; text-align: center; font-style: italic;">
+                + {{ evidence_count - 15 }} additional evidence items (see full report for complete catalog)
+            </div>
+            {% endif %}
+            {% endif %}
+
+            <!-- Disclaimer -->
+            <div class="disclaimer-box mt-16">
+                <div class="disclaimer-title">&#9888; Disclaimer</div>
+                <div class="disclaimer-text">
+                    This report is generated by an AI-powered analysis platform for research and informational purposes only.
+                    It does not constitute medical advice, regulatory guidance, or investment recommendations.
+                    All findings should be independently verified through appropriate due diligence.
+                </div>
+            </div>
+
+            <!-- Generation Info -->
+            <div class="grid-3 mt-12" style="gap: 8px;">
+                <div class="dark-card text-center" style="padding: 6px;">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase;">Generated</div>
+                    <div style="font-size: 9px; font-weight: 600; color: var(--text-secondary);">{{ generated_at_full }}</div>
+                </div>
+                <div class="dark-card text-center" style="padding: 6px;">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase;">Drug</div>
+                    <div style="font-size: 9px; font-weight: 600; color: var(--yellow);">{{ drug_name }}</div>
+                </div>
+                <div class="dark-card text-center" style="padding: 6px;">
+                    <div style="font-size: 8px; color: var(--text-muted); text-transform: uppercase;">Platform</div>
+                    <div style="font-size: 9px; font-weight: 600; color: var(--text-secondary);">Repurpose.AI v3.0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-left">
+                <div class="footer-dot"></div>
+                <div class="footer-text">REPURPOSE.AI &mdash; {{ drug_name }} &mdash; Confidential</div>
+            </div>
+            <div class="footer-page">{{ evidence_page + 1 }} / {{ total_pages }}</div>
+        </div>
+    </div>
+
+</body>
+</html>

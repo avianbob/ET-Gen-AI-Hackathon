@@ -1,0 +1,225 @@
+/* Tailwind is loaded via CDN in index.html; @tailwind directives are not processed by the build minifier. */
+
+/* --- Futuristic / Professional base --- */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Refined scrollbar — tech/pro */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Glass panel utility */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* Subtle glow for focus/CTAs */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
+}
+.glow-cyan-strong {
+  box-shadow: 0 0 32px rgba(6, 182, 212, 0.35);
+}
+
+/* Card elevation — professional */
+.card-elevated {
+  background: #ffffff;
+  border: 1px solid rgba(30, 41, 59, 0.08);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Subtle grid pulse for loading */
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+.animate-grid-pulse {
+  animation: gridPulse 1.5s ease-in-out infinite;
+}
+
+/* Mobile: touch-friendly tap targets (min 44px) */
+@media (pointer: coarse) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent horizontal overflow on small screens */
+.overflow-x-auto-touch {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Home page animations --- */
+@keyframes floatSlow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.02); }
+  66% { transform: translate(-20px, 20px) scale(0.98); }
+}
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+.animate-float-slow-delayed {
+  animation: floatSlow 14s ease-in-out 2s infinite;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.1; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.2; transform: translate(-50%, -50%) scale(1.05); }
+}
+.animate-pulse-slow {
+  animation: pulseSlow 8s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  25% { transform: translate(10px, -15px) scale(1.2); opacity: 0.6; }
+  50% { transform: translate(-5px, -25px) scale(0.9); opacity: 0.4; }
+  75% { transform: translate(-15px, -10px) scale(1.1); opacity: 0.5; }
+}
+.animate-particle-float {
+  animation: particleFloat 5s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spinSlow 25s linear infinite;
+}
+.animate-spin-slow-reverse {
+  animation: spinSlow 30s linear infinite reverse;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-shift {
+  animation: gradientShift 4s ease infinite;
+}
+
+/* --- Ambient background: line drawing, liquid flow, molecule graphics --- */
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+
+@keyframes moleculeFloat {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.5; }
+  33% { transform: translate(15px, -10px) rotate(5deg); opacity: 0.7; }
+  66% { transform: translate(-10px, 8px) rotate(-3deg); opacity: 0.55; }
+}
+.animate-molecule-float {
+  animation: moleculeFloat 10s ease-in-out infinite;
+}
+
+@keyframes particleDrift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(20px, -30px); }
+  50% { transform: translate(-10px, -50px); }
+  75% { transform: translate(-25px, -20px); }
+}
+.animate-particle-drift {
+  animation: particleDrift 15s ease-in-out infinite;
+}
+
+@keyframes bondPulse {
+  0%, 100% { opacity: 0.2; stroke-width: 0.5; }
+  50% { opacity: 0.4; stroke-width: 1; }
+}
+
+/* Additional animations for richer ambient background */
+@keyframes scalePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+.animate-scale-pulse {
+  animation: scalePulse 6s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float-up-down {
+  animation: floatUpDown 5s ease-in-out infinite;
+}
+
+@keyframes opacityFade {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.2; }
+}
+.animate-opacity-fade {
+  animation: opacityFade 4s ease-in-out infinite;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+@keyframes floatDiagonal {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(8px, -12px); }
+  50% { transform: translate(-6px, -8px); }
+  75% { transform: translate(-10px, 6px); }
+}
+.animate-float-diagonal {
+  animation: floatDiagonal 8s ease-in-out infinite;
+}
+
+@keyframes driftSlow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(-15px, 10px) rotate(2deg); }
+  66% { transform: translate(10px, -8px) rotate(-1deg); }
+}
+.animate-drift-slow {
+  animation: driftSlow 12s ease-in-out infinite;
+}

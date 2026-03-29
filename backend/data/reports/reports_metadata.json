@@ -1,0 +1,12 @@
+[
+  {
+    "report_id": "a299c252-8e39-4d82-aac5-a3481ae83f36",
+    "drug_name": "Ethanol",
+    "report_type": "excel_report",
+    "indication": null,
+    "file_path": "a299c252-8e39-4d82-aac5-a3481ae83f36_Ethanol_20260329_150555.xlsx",
+    "file_size": 16926,
+    "created_at": "2026-03-29T15:05:55.771241",
+    "session_id": "bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639"
+  }
+]

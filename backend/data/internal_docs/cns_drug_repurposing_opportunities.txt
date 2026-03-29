@@ -1,0 +1,68 @@
+INTERNAL DOCUMENT — CONFIDENTIAL
+CNS Drug Repurposing Opportunities Assessment
+
+Date: December 2024
+Prepared by: Strategic R&D Planning Division
+
+1. Landscape Summary
+The CNS therapeutics market represents one of the highest unmet need areas in pharma:
+- Alzheimer's Disease: $15B market, 95/100 unmet need score, recent FDA approvals (lecanemab, donanemab) validating amyloid hypothesis
+- Parkinson's Disease: $8.2B market, growing 6% CAGR, motor symptom management well-served but non-motor symptoms underserved
+- Major Depressive Disorder: $17B market, treatment-resistant depression (TRD) is key unmet need
+- Epilepsy: $7.5B market, 30% of patients are drug-resistant
+
+2. Priority Repurposing Candidates
+
+A. Metformin for Alzheimer's Disease
+Evidence strength: HIGH
+Key evidence:
+- UK Biobank analysis (n=113,749): Metformin users had 35% lower dementia risk (HR 0.65, 95% CI 0.58-0.73)
+- Mechanism: AMPK activation → improved cerebral insulin signaling → reduced tau phosphorylation
+- Phase 2 trial (NCT04098666 analog): 18-month study showed 15% slower cognitive decline (ADAS-Cog) vs placebo
+- Neuroprotective effects via mitochondrial complex I inhibition
+Target patient profile: Type 2 diabetes patients at risk for Alzheimer's — estimated 8M US patients
+Market opportunity: $3-5B if prevention/delay indication achieved
+Competitive position: First-mover advantage — no other repurposed drug in Phase 2 for AD
+IP strategy: Method-of-use patent for combination with cholinesterase inhibitor
+Recommendation: HIGHEST PRIORITY — advance to Phase 3
+
+B. Losartan for Alzheimer's Disease
+Evidence: MODERATE
+Rationale: RAS pathway modulation; AT1 blockade reduces neuroinflammation and Aβ accumulation
+Preclinical: 30% reduction in amyloid plaque load in APP/PS1 transgenic mice
+Epidemiological: ARB users show 20% lower dementia incidence (multiple retrospective studies)
+Limitations: No prospective clinical data specific to AD
+Recommendation: Monitor ongoing academic trials; prepare for licensing if Phase 2 data emerges
+
+C. Rapamycin for Parkinson's Disease
+Evidence: LOW-MODERATE
+Rationale: mTOR inhibition enhances autophagy → clearance of α-synuclein aggregates
+Preclinical: Significant neuroprotection in MPTP and rotenone mouse models
+Safety concern: Immunosuppression limits chronic use; need for CNS-selective formulation
+Market: $2B opportunity for disease-modifying therapy (currently none approved for PD)
+Recommendation: WATCH — invest only if CNS-targeted delivery technology becomes available
+
+D. Ketamine/Esketamine Analogs for Treatment-Resistant Depression
+Market status: Spravato (esketamine) approved but limited adoption due to REMS program
+Opportunity: Oral ketamine formulations or novel glutamate modulators
+Market gap: Oral formulation could capture $4B market by removing infusion requirement
+Competitive landscape: Multiple companies pursuing (atai Life Sciences, Perception Neuroscience)
+Recommendation: Evaluate licensing opportunities for oral formulations
+
+3. CNS Drug Delivery Challenges
+- Blood-brain barrier (BBB) remains the primary obstacle
+- Emerging technologies: focused ultrasound BBB opening, nanoparticle carriers, intranasal delivery
+- Strategic recommendation: Partner with BBB technology companies (Insightec, Denali Therapeutics)
+
+4. Regulatory Considerations
+- FDA increasingly accepting biomarker endpoints (amyloid PET, tau PET, NfL)
+- Accelerated approval pathway available for serious conditions with unmet need
+- Companion diagnostic requirement for some CNS programs
+
+5. Investment Recommendation Summary
+| Drug | Indication | Priority | Evidence | Investment ($M) | Timeline |
+|------|-----------|----------|----------|-----------------|----------|
+| Metformin | Alzheimer's | HIGHEST | High | 45-60 | 3-5 years |
+| Losartan | Alzheimer's | LOW | Moderate | 5-10 (monitor) | 5-7 years |
+| Rapamycin | Parkinson's | WATCH | Low-Mod | 2-5 (research) | 7-10 years |
+| Ketamine oral | TRD | MODERATE | High | 30-40 (license) | 2-3 years |

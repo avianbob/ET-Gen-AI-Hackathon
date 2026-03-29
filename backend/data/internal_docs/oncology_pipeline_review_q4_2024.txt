@@ -1,0 +1,44 @@
+INTERNAL DOCUMENT — CONFIDENTIAL
+Oncology Pipeline Review Q4 2024
+
+Executive Summary
+Our oncology pipeline currently comprises 12 active programs across 5 tumor types. This document reviews the current status of each program, key milestones achieved, and strategic recommendations for Q1 2025.
+
+1. Metformin Repurposing for Colorectal Cancer
+Status: Phase 2a study ongoing (NCT04114136 analog)
+Enrollment: 180/240 patients enrolled
+Key findings to date:
+- Combination with standard FOLFOX chemotherapy shows 23% improvement in progression-free survival (PFS) vs FOLFOX alone in interim analysis
+- AMPK activation pathway confirmed via tumor biopsy biomarkers
+- Safety profile favorable — no dose-limiting toxicities beyond known GI effects
+- Cost advantage: metformin treatment cost ~$50/year vs new targeted agents at $150,000+/year
+Recommendation: Continue enrollment. Fast-track to Phase 2b/3 if interim endpoint met.
+
+2. Sildenafil for Immune Checkpoint Enhancement
+Status: Preclinical (IND-enabling studies)
+Rationale: PDE5 inhibition shown to reduce MDSC (myeloid-derived suppressor cells) in tumor microenvironment, potentially enhancing PD-1 inhibitor efficacy
+Key data:
+- Mouse model: Sildenafil + anti-PD-1 → 45% tumor regression vs 18% with anti-PD-1 alone
+- Mechanism: Increased CD8+ T-cell infiltration in tumors
+- Target indications: Non-small cell lung cancer (NSCLC), melanoma
+Recommendation: Proceed with IND filing for combination study. Partner with checkpoint inhibitor manufacturer.
+
+3. Aspirin for Cancer Prevention
+Status: Observational data analysis complete
+Evidence: Meta-analysis of 12 epidemiological studies shows 20-30% reduction in colorectal cancer incidence with regular aspirin use
+Target population: High-risk individuals (Lynch syndrome, familial adenomatous polyposis)
+Regulatory pathway: sNDA for cancer risk reduction indication
+Recommendation: Discuss FDA meeting for chemoprevention study design.
+
+4. Thalidomide Analogs for Multiple Myeloma
+Status: Market analysis complete
+Finding: Despite Revlimid (lenalidomide) dominance, there is opportunity for next-generation immunomodulatory drugs (IMiDs) with improved safety profile
+Market size: Multiple myeloma market = $20.3B globally (2024)
+Key competitor watch: Celgene/BMS (Revlimid, Pomalyst), Johnson & Johnson (Darzalex)
+Recommendation: Evaluate novel IMiD candidates for licensing.
+
+Strategic Priorities for Q1 2025:
+1. Metformin colorectal cancer: Complete enrollment by March
+2. Sildenafil immuno-oncology: File IND by February
+3. Initiate market assessment for pancreatic cancer repurposing opportunities
+4. Explore AI-driven drug screening for rare tumor types

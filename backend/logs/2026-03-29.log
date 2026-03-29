@@ -1,0 +1,459 @@
+2026-03-29 08:18:25 - drug_repurposing.websocket - INFO - websocket.py:51 - WebSocket ConnectionManager initialized
+2026-03-29 08:18:25 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:18:25 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:18:25 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:18:25 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:18:25 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:18:25 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:19:59 - drug_repurposing.websocket - INFO - websocket.py:51 - WebSocket ConnectionManager initialized
+2026-03-29 08:19:59 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:19:59 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:19:59 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:19:59 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:19:59 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:19:59 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:21:11 - drug_repurposing.websocket - INFO - websocket.py:51 - WebSocket ConnectionManager initialized
+2026-03-29 08:21:12 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:21:12 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 08:21:12 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:21:12 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:21:12 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 08:21:12 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 08:21:43 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:21:43 - drug_repurposing.websocket - ERROR - websocket.py:97 - Failed to send message to fa1c7570-dace-40cb-b1dc-5e9520a076a5: 
+2026-03-29 08:21:43 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:21:43 - drug_repurposing.websocket - ERROR - websocket.py:223 - WebSocket error for fa1c7570-dace-40cb-b1dc-5e9520a076a5: WebSocket is not connected. Need to call "accept" first.
+2026-03-29 08:21:43 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:21:45 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:21:45 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:21:48 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:22:01 - drug_repurposing.api.search - INFO - search.py:82 - Search request received for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.api.search - INFO - search.py:103 - Cache miss for: Ethanol, running workflow...
+2026-03-29 08:22:01 - drug_repurposing.graph.workflow - INFO - workflow.py:44 - Creating drug repurposing workflow...
+2026-03-29 08:22:01 - drug_repurposing.graph.workflow - INFO - workflow.py:77 - Workflow created successfully
+2026-03-29 08:22:01 - drug_repurposing.graph.workflow - INFO - workflow.py:78 - Workflow steps: initialize -> run_agents -> aggregate -> score -> analyze_comparatives -> refine_scores -> fetch_dashboard -> full_report_extensions -> synthesize -> finalize
+2026-03-29 08:22:01 - drug_repurposing.api.search - INFO - search.py:116 - Starting workflow for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:72 - Initializing search for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:115 - Search initialized successfully
+2026-03-29 08:22:01 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:133 - Running all agents in parallel...
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - LiteratureAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.LiteratureAgent - INFO - base_agent.py:127 - Running LiteratureAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.LiteratureAgent - INFO - literature_agent.py:44 - Searching PubMed with query: Ethanol AND (repurposing OR repositioning OR new indication OR off-label)
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - ClinicalTrialsAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.ClinicalTrialsAgent - INFO - base_agent.py:127 - Running ClinicalTrialsAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.ClinicalTrialsAgent - INFO - clinical_trials_agent.py:77 - Searching ClinicalTrials.gov for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - BioactivityAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.BioactivityAgent - INFO - base_agent.py:127 - Running BioactivityAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.BioactivityAgent - INFO - bioactivity_agent.py:35 - Searching ChEMBL for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - PatentAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.PatentAgent - INFO - base_agent.py:127 - Running PatentAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.PatentAgent - INFO - patent_agent.py:170 - Searching USPTO PatentsView for patents: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.PatentAgent - INFO - patent_agent.py:174 - No PatentsView API key configured, using curated patent data for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.PatentAgent - INFO - patent_agent.py:249 - Using mock data: 1 patents for 'Ethanol'
+2026-03-29 08:22:01 - drug_repurposing.agents.PatentAgent - INFO - base_agent.py:136 - PatentAgent processed 1 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - PatentAgent success - found 1 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - InternalAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.InternalAgent - INFO - base_agent.py:127 - Running InternalAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - OpenFDAAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.OpenFDAAgent - INFO - base_agent.py:127 - Running OpenFDAAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.OpenFDAAgent - INFO - openfda_agent.py:37 - Searching OpenFDA for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - OpenTargetsAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.OpenTargetsAgent - INFO - base_agent.py:127 - Running OpenTargetsAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.OpenTargetsAgent - INFO - opentargets_agent.py:37 - Searching OpenTargets for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - SemanticScholarAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.SemanticScholarAgent - INFO - base_agent.py:127 - Running SemanticScholarAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.SemanticScholarAgent - INFO - semantic_scholar_agent.py:43 - Searching Semantic Scholar for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - DailyMedAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.DailyMedAgent - INFO - base_agent.py:127 - Running DailyMedAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.DailyMedAgent - INFO - dailymed_agent.py:35 - Searching DailyMed for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - KEGGAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.KEGGAgent - INFO - base_agent.py:127 - Running KEGGAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.KEGGAgent - INFO - kegg_agent.py:34 - Searching KEGG for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - UniProtAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.UniProtAgent - INFO - base_agent.py:127 - Running UniProtAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.UniProtAgent - INFO - uniprot_agent.py:35 - Searching UniProt for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - OrangeBookAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.OrangeBookAgent - INFO - base_agent.py:127 - Running OrangeBookAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.OrangeBookAgent - INFO - orange_book_agent.py:37 - Searching FDA Orange Book for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - RxNormAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.RxNormAgent - INFO - base_agent.py:127 - Running RxNormAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.RxNormAgent - INFO - rxnorm_agent.py:43 - Fetching RxNorm data for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - WHOAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.WHOAgent - INFO - base_agent.py:127 - Running WHOAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.WHOAgent - INFO - who_agent.py:202 - Checking WHO data for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.WHOAgent - INFO - who_agent.py:234 - Found 0 WHO data items
+2026-03-29 08:22:01 - drug_repurposing.agents.WHOAgent - INFO - who_agent.py:377 - Processed 0 evidence items from WHO data
+2026-03-29 08:22:01 - drug_repurposing.agents.WHOAgent - INFO - base_agent.py:136 - WHOAgent processed 0 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - WHOAgent success - found 0 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - DrugBankAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.DrugBankAgent - INFO - base_agent.py:127 - Running DrugBankAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.DrugBankAgent - INFO - drugbank_agent.py:234 - Fetching DrugBank data for: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.DrugBankAgent - INFO - drugbank_agent.py:407 - Processed 0 evidence items from DrugBank
+2026-03-29 08:22:01 - drug_repurposing.agents.DrugBankAgent - INFO - base_agent.py:136 - DrugBankAgent processed 0 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - DrugBankAgent success - found 0 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - IQVIAPipelineAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.IQVIAPipelineAgent - INFO - base_agent.py:127 - Running IQVIAPipelineAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Type 2 Diabetes
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Cancer
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Alzheimer's Disease
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Cardiovascular Disease
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Obesity
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: NASH
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Chronic Pain
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Depression
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Rheumatoid Arthritis
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Parkinson's Disease
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Asthma
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: COPD
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Multiple Sclerosis
+2026-03-29 08:22:01 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Psoriasis
+2026-03-29 08:22:01 - drug_repurposing.agents.IQVIAPipelineAgent - INFO - base_agent.py:136 - IQVIAPipelineAgent processed 14 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - IQVIAPipelineAgent success - found 14 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - EXIMPipelineAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.EXIMPipelineAgent - INFO - base_agent.py:127 - Running EXIMPipelineAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.EXIMPipelineAgent - INFO - base_agent.py:136 - EXIMPipelineAgent processed 2 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - EXIMPipelineAgent success - found 2 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:179 - WebIntelligencePipelineAgent started
+2026-03-29 08:22:01 - drug_repurposing.agents.WebIntelligencePipelineAgent - INFO - base_agent.py:127 - Running WebIntelligencePipelineAgent for drug: Ethanol
+2026-03-29 08:22:01 - drug_repurposing.agents.WebIntelligencePipelineAgent - INFO - base_agent.py:136 - WebIntelligencePipelineAgent processed 2 evidence items
+2026-03-29 08:22:01 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - WebIntelligencePipelineAgent success - found 2 evidence items
+2026-03-29 08:22:02 - drug_repurposing.agents.InternalAgent - INFO - internal_agent.py:576 - No specific internal data for Ethanol, returning generic data
+2026-03-29 08:22:02 - drug_repurposing.agents.InternalAgent - INFO - base_agent.py:136 - InternalAgent processed 1 evidence items
+2026-03-29 08:22:02 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - InternalAgent success - found 1 evidence items
+2026-03-29 08:22:02 - drug_repurposing.agents.OpenTargetsAgent - INFO - opentargets_agent.py:91 - Found drug: ALCOHOL (ID: CHEMBL545)
+2026-03-29 08:22:02 - drug_repurposing.api_clients - WARNING - api_clients.py:96 - Attempt 1/3 failed: Client error '400 Bad Request' for url 'https://api.platform.opentargets.org/api/v4/graphql'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400. Retrying in 1s...
+2026-03-29 08:22:02 - drug_repurposing.agents.ClinicalTrialsAgent - WARNING - clinical_trials_agent.py:91 - aiohttp failed: 403 Forbidden - API blocking requests
+2026-03-29 08:22:02 - drug_repurposing.agents.BioactivityAgent - INFO - bioactivity_agent.py:46 - Found ChEMBL ID: CHEMBL545
+2026-03-29 08:22:03 - drug_repurposing.agents.UniProtAgent - INFO - uniprot_agent.py:44 - Found 20 UniProt records
+2026-03-29 08:22:03 - drug_repurposing.agents.UniProtAgent - INFO - base_agent.py:136 - UniProtAgent processed 20 evidence items
+2026-03-29 08:22:03 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - UniProtAgent success - found 20 evidence items
+2026-03-29 08:22:03 - drug_repurposing.agents.DailyMedAgent - INFO - dailymed_agent.py:49 - Found 10 DailyMed records
+2026-03-29 08:22:03 - drug_repurposing.agents.DailyMedAgent - INFO - base_agent.py:136 - DailyMedAgent processed 10 evidence items
+2026-03-29 08:22:03 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - DailyMedAgent success - found 10 evidence items
+2026-03-29 08:22:03 - drug_repurposing.agents.LiteratureAgent - INFO - literature_agent.py:88 - Found 50 PMIDs
+2026-03-29 08:22:03 - drug_repurposing.api_clients - WARNING - api_clients.py:96 - Attempt 1/3 failed: Client error '404 Not Found' for url 'https://api.fda.gov/drug/drugsfda.json?search=openfda.brand_name%3A%22Ethanol%22+OR+openfda.generic_name%3A%22Ethanol%22&limit=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Retrying in 1s...
+2026-03-29 08:22:03 - drug_repurposing.agents.BioactivityAgent - INFO - bioactivity_agent.py:112 - Found 100 bioactivity records
+2026-03-29 08:22:03 - drug_repurposing.agents.OpenFDAAgent - INFO - openfda_agent.py:52 - Found 35 total OpenFDA records
+2026-03-29 08:22:03 - drug_repurposing.agents.OpenFDAAgent - INFO - base_agent.py:136 - OpenFDAAgent processed 35 evidence items
+2026-03-29 08:22:03 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - OpenFDAAgent success - found 35 evidence items
+2026-03-29 08:22:04 - drug_repurposing.api_clients - WARNING - api_clients.py:96 - Attempt 2/3 failed: Client error '400 Bad Request' for url 'https://api.platform.opentargets.org/api/v4/graphql'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400. Retrying in 2.0s...
+2026-03-29 08:22:04 - drug_repurposing.api_clients - WARNING - api_clients.py:96 - Attempt 2/3 failed: Client error '404 Not Found' for url 'https://api.fda.gov/drug/drugsfda.json?search=openfda.brand_name%3A%22Ethanol%22+OR+openfda.generic_name%3A%22Ethanol%22&limit=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404. Retrying in 2.0s...
+2026-03-29 08:22:05 - drug_repurposing.agents.ClinicalTrialsAgent - INFO - clinical_trials_agent.py:124 - Found 100 clinical trials
+2026-03-29 08:22:05 - drug_repurposing.agents.ClinicalTrialsAgent - INFO - base_agent.py:136 - ClinicalTrialsAgent processed 100 evidence items
+2026-03-29 08:22:05 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - ClinicalTrialsAgent success - found 100 evidence items
+2026-03-29 08:22:05 - drug_repurposing.agents.SemanticScholarAgent - WARNING - semantic_scholar_agent.py:120 - Semantic Scholar rate limit hit (attempt 1/3), waiting 10s before retry...
+2026-03-29 08:22:05 - drug_repurposing.agents.RxNormAgent - INFO - rxnorm_agent.py:89 - Fetched 2 data categories from RxNorm
+2026-03-29 08:22:05 - drug_repurposing.agents.RxNormAgent - INFO - rxnorm_agent.py:331 - Processed 6 evidence items from RxNorm
+2026-03-29 08:22:05 - drug_repurposing.agents.RxNormAgent - INFO - base_agent.py:136 - RxNormAgent processed 6 evidence items
+2026-03-29 08:22:05 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - RxNormAgent success - found 6 evidence items
+2026-03-29 08:22:06 - drug_repurposing.api_clients - ERROR - api_clients.py:103 - All 3 attempts failed: Client error '400 Bad Request' for url 'https://api.platform.opentargets.org/api/v4/graphql'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-29 08:22:06 - drug_repurposing.agents.OpenTargetsAgent - WARNING - opentargets_agent.py:158 - Failed to get drug details: Client error '400 Bad Request' for url 'https://api.platform.opentargets.org/api/v4/graphql'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-03-29 08:22:06 - drug_repurposing.agents.KEGGAgent - INFO - kegg_agent.py:62 - Found 3 KEGG records
+2026-03-29 08:22:06 - drug_repurposing.agents.KEGGAgent - INFO - base_agent.py:136 - KEGGAgent processed 3 evidence items
+2026-03-29 08:22:06 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - KEGGAgent success - found 3 evidence items
+2026-03-29 08:22:06 - drug_repurposing.agents.LiteratureAgent - INFO - base_agent.py:136 - LiteratureAgent processed 49 evidence items
+2026-03-29 08:22:06 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - LiteratureAgent success - found 49 evidence items
+2026-03-29 08:22:06 - drug_repurposing.agents.OpenTargetsAgent - INFO - opentargets_agent.py:48 - Found 1 OpenTargets records
+2026-03-29 08:22:06 - drug_repurposing.agents.OpenTargetsAgent - INFO - base_agent.py:136 - OpenTargetsAgent processed 0 evidence items
+2026-03-29 08:22:06 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - OpenTargetsAgent success - found 0 evidence items
+2026-03-29 08:22:07 - drug_repurposing.api_clients - ERROR - api_clients.py:103 - All 3 attempts failed: Client error '404 Not Found' for url 'https://api.fda.gov/drug/drugsfda.json?search=openfda.brand_name%3A%22Ethanol%22+OR+openfda.generic_name%3A%22Ethanol%22&limit=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-03-29 08:22:07 - drug_repurposing.agents.OrangeBookAgent - WARNING - orange_book_agent.py:69 - FDA application search error: Client error '404 Not Found' for url 'https://api.fda.gov/drug/drugsfda.json?search=openfda.brand_name%3A%22Ethanol%22+OR+openfda.generic_name%3A%22Ethanol%22&limit=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2026-03-29 08:22:07 - drug_repurposing.agents.OrangeBookAgent - INFO - orange_book_agent.py:46 - Found 0 Orange Book records
+2026-03-29 08:22:07 - drug_repurposing.agents.OrangeBookAgent - INFO - base_agent.py:136 - OrangeBookAgent processed 0 evidence items
+2026-03-29 08:22:07 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - OrangeBookAgent success - found 0 evidence items
+2026-03-29 08:22:07 - drug_repurposing.agents.BioactivityAgent - INFO - base_agent.py:136 - BioactivityAgent processed 23 evidence items
+2026-03-29 08:22:07 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - BioactivityAgent success - found 23 evidence items
+2026-03-29 08:22:16 - drug_repurposing.agents.SemanticScholarAgent - WARNING - semantic_scholar_agent.py:120 - Semantic Scholar rate limit hit (attempt 2/3), waiting 20s before retry...
+2026-03-29 08:22:38 - drug_repurposing.agents.SemanticScholarAgent - INFO - semantic_scholar_agent.py:83 - Found 50 unique papers
+2026-03-29 08:22:38 - drug_repurposing.agents.SemanticScholarAgent - INFO - base_agent.py:136 - SemanticScholarAgent processed 50 evidence items
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:199 - SemanticScholarAgent success - found 50 evidence items
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:247 - All agents complete. Total evidence items: 316
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:264 - Aggregating evidence from all agents...
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:276 - Aggregated 316 total evidence items
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:292 - Scoring and ranking evidence...
+2026-03-29 08:22:38 - drug_repurposing.scoring - INFO - evidence_scorer.py:494 - Ranking 316 evidence items...
+2026-03-29 08:22:38 - drug_repurposing.scoring - INFO - evidence_scorer.py:510 - Skipped 84 evidence items without valid indication
+2026-03-29 08:22:38 - drug_repurposing.scoring - INFO - evidence_scorer.py:558 - Identified 126 unique indications
+2026-03-29 08:22:38 - drug_repurposing.scoring - INFO - evidence_scorer.py:560 - Top indication: Liver with score 100.0
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:307 - Basic scoring identified 126 opportunities
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:310 - Running enhanced composite scoring...
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:336 - Analyzing market/competition for top 15 indications by evidence count:
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:338 -   1. Multiple Indications (17 evidence items)
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:338 -   2. Cancer (16 evidence items)
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:338 -   3. Safety Alert (10 evidence items)
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:338 -   4. ALS (7 evidence items)
+2026-03-29 08:22:38 - drug_repurposing.graph.nodes - INFO - nodes.py:338 -   5. Cardiovascular (7 evidence items)
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Multiple Indications
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Cancer
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Safety Alert
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: ALS
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Cardiovascular
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Infection
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Liver
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Alcoholism
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Alcohol Dependence
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Alcohol Use Disorder
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Alzheimer
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Diabetes
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Parkinson
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Depression
+2026-03-29 08:22:38 - drug_repurposing.market.analyzer - INFO - market_analyzer.py:231 - Analyzing market for indication: Fetal Alcohol Spectrum Disorders
+2026-03-29 08:22:38 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Multiple Indications
+2026-03-29 08:22:38 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Multiple Indications
+2026-03-29 08:22:39 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 3 unique competitors
+2026-03-29 08:22:39 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Cancer
+2026-03-29 08:22:39 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Cancer
+2026-03-29 08:22:40 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 4 unique competitors
+2026-03-29 08:22:40 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Safety Alert
+2026-03-29 08:22:40 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Safety Alert
+2026-03-29 08:22:41 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 0 unique competitors
+2026-03-29 08:22:41 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: ALS
+2026-03-29 08:22:41 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: ALS
+2026-03-29 08:22:42 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 2 unique competitors
+2026-03-29 08:22:42 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Cardiovascular
+2026-03-29 08:22:42 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Cardiovascular
+2026-03-29 08:22:44 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 3 unique competitors
+2026-03-29 08:22:44 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Infection
+2026-03-29 08:22:44 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Infection
+2026-03-29 08:22:45 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 5 unique competitors
+2026-03-29 08:22:45 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Liver
+2026-03-29 08:22:45 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Liver
+2026-03-29 08:22:46 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 8 unique competitors
+2026-03-29 08:22:46 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Alcoholism
+2026-03-29 08:22:46 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Alcoholism
+2026-03-29 08:22:47 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 4 unique competitors
+2026-03-29 08:22:47 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Alcohol Dependence
+2026-03-29 08:22:47 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Alcohol Dependence
+2026-03-29 08:22:48 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 4 unique competitors
+2026-03-29 08:22:48 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Alcohol Use Disorder
+2026-03-29 08:22:48 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Alcohol Use Disorder
+2026-03-29 08:22:49 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 3 unique competitors
+2026-03-29 08:22:49 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Alzheimer
+2026-03-29 08:22:49 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Alzheimer
+2026-03-29 08:22:50 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 5 unique competitors
+2026-03-29 08:22:50 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Diabetes
+2026-03-29 08:22:50 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Diabetes
+2026-03-29 08:22:51 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 4 unique competitors
+2026-03-29 08:22:51 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Parkinson
+2026-03-29 08:22:51 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Parkinson
+2026-03-29 08:22:53 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 3 unique competitors
+2026-03-29 08:22:53 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Depression
+2026-03-29 08:22:53 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Depression
+2026-03-29 08:22:54 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 3 unique competitors
+2026-03-29 08:22:54 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:354 - Analyzing competitive landscape for: Fetal Alcohol Spectrum Disorders
+2026-03-29 08:22:54 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:207 - Finding competitors for indication: Fetal Alcohol Spectrum Disorders
+2026-03-29 08:22:55 - drug_repurposing.market.competitor - INFO - competitor_tracker.py:264 - Found 1 unique competitors
+2026-03-29 08:22:55 - drug_repurposing.scoring.composite - INFO - composite_scorer.py:142 - Ranking 316 evidence items with composite scoring...
+2026-03-29 08:22:55 - drug_repurposing.scoring.composite - INFO - composite_scorer.py:159 - Skipped 84 evidence items without valid indication
+2026-03-29 08:22:55 - drug_repurposing.scoring.composite - INFO - composite_scorer.py:186 - Scored 126 indications
+2026-03-29 08:22:55 - drug_repurposing.scoring.composite - INFO - composite_scorer.py:188 - Top indication: Cancer with score 62.6
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:432 - Composite scoring identified 126 opportunities
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:436 -   1. Liver (confidence: 100.0, evidence: 6)
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:436 -   2. Cardiovascular (confidence: 100.0, evidence: 7)
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:436 -   3. Infection (confidence: 100.0, evidence: 6)
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:444 - Enhanced composite scores:
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:447 -   1. Cancer: 62.6 [Sci:55 Mkt:80 Comp:65 Feas:50]
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:447 -   2. Alcoholism: 56.9 [Sci:55 Mkt:57 Comp:65 Feas:50]
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:447 -   3. Precapillary Pulmonary Hypertension: 54.5 [Sci:46 Mkt:50 Comp:80 Feas:50]
+2026-03-29 08:22:55 - drug_repurposing.graph.nodes - INFO - nodes.py:476 - Analyzing comparative advantages over existing treatments...
+2026-03-29 08:22:55 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:395 - Found 2 curated comparators for 'Cancer'
+2026-03-29 08:22:55 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Alcoholism'
+2026-03-29 08:22:55 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Alcoholism (normalized: alcoholism)
+2026-03-29 08:22:55 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:395 - Found 2 curated comparators for 'Precapillary Pulmonary Hypertension'
+2026-03-29 08:22:56 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Multiple Indications'
+2026-03-29 08:22:56 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Multiple Indications (normalized: multiple indications)
+2026-03-29 08:22:56 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Safety Alert'
+2026-03-29 08:22:56 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Safety Alert (normalized: safety alert)
+2026-03-29 08:22:57 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Alcohol Dependence'
+2026-03-29 08:22:57 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Alcohol Dependence (normalized: alcohol dependence)
+2026-03-29 08:22:57 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Fetal Alcohol Spectrum Disorders'
+2026-03-29 08:22:57 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Fetal Alcohol Spectrum Disorders (normalized: fetal alcohol spectrum disorders)
+2026-03-29 08:22:58 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Analgesics, Opioid'
+2026-03-29 08:22:58 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Analgesics, Opioid (normalized: analgesics, opioid)
+2026-03-29 08:22:58 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Fatigue Symptom'
+2026-03-29 08:22:58 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Fatigue Symptom (normalized: fatigue symptom)
+2026-03-29 08:22:59 - drug_repurposing.scoring.comparative_analyzer - INFO - comparative_analyzer.py:407 - No comparators found for 'Mechanical Ventilation for More Than 48 Hours.'
+2026-03-29 08:22:59 - drug_repurposing.market.segment_analyzer - INFO - segment_analyzer.py:555 - No segment data for indication: Mechanical Ventilation for More Than 48 Hours. (normalized: mechanical ventilation for more than 48 hours.)
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:568 - Comparative analysis complete for 10 indications
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:616 - Refining scores with enhanced analysis data...
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:649 -   1. Cancer: 75.1 (sci refinement: +8.0)
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:649 -   2. Precapillary Pulmonary Hypertension: 62.3 (sci refinement: +2.0)
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:649 -   3. Alcoholism: 57.4 (sci refinement: +2.0)
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:654 - Score refinement complete for 126 indications
+2026-03-29 08:22:59 - drug_repurposing.graph.nodes - INFO - nodes.py:817 - Fetching dashboard components (PID, TEA, demographics)...
+2026-03-29 08:23:06 - drug_repurposing.graph.nodes - INFO - nodes.py:985 - Generating full-report extensions (process, TEA, demographics)...
+2026-03-29 08:23:06 - drug_repurposing.llm.gemini - INFO - gemini_client.py:52 - Initialized Gemini client with model: gemini-2.0-flash
+2026-03-29 08:23:06 - drug_repurposing.llm.factory - INFO - llm_factory.py:92 - [OK] Successfully initialized Gemini LLM
+2026-03-29 08:23:06 - drug_repurposing.llm.groq - INFO - groq_client.py:32 - Initialized Groq client with model: llama-3.3-70b-versatile
+2026-03-29 08:23:06 - drug_repurposing.llm.ollama - INFO - ollama_client.py:38 - Initialized Ollama client with model: llama3.2 at http://localhost:11434
+2026-03-29 08:23:06 - drug_repurposing.llm.ollama - WARNING - ollama_client.py:109 - Ollama server not available: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError("HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-29 08:23:06 - drug_repurposing.llm.factory - INFO - llm_factory.py:116 - [X] Ollama server not reachable
+2026-03-29 08:23:06 - drug_repurposing.llm.factory - INFO - llm_factory.py:60 - [OK] LLM chain: Gemini → Groq → Ollama (fallback on Gemini errors)
+2026-03-29 08:23:41 - drug_repurposing.llm.gemini - ERROR - gemini_client.py:87 - Gemini generation failed: Error calling model 'gemini-2.0-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 18.7990693s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+2026-03-29 08:23:41 - drug_repurposing.llm.fallback - WARNING - fallback_llm.py:53 - Gemini failed (Error calling model 'gemini-2.0-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 18.7990693s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}); trying Groq/Ollama if configured.
+2026-03-29 08:23:44 - drug_repurposing.llm.groq - INFO - groq_client.py:46 - Generated 3556 characters with Groq
+2026-03-29 08:23:44 - drug_repurposing.llm.fallback - INFO - fallback_llm.py:58 - Response generated via Groq (fallback).
+2026-03-29 08:23:44 - drug_repurposing.graph.nodes - INFO - nodes.py:1124 - Synthesizing results with LLM...
+2026-03-29 08:23:44 - drug_repurposing.graph.nodes - INFO - nodes.py:1143 - Using enhanced synthesis prompt with comparative data
+2026-03-29 08:23:53 - drug_repurposing.llm.factory - INFO - llm_factory.py:154 - Retrieved RAG context: 5010 chars
+2026-03-29 08:24:29 - drug_repurposing.llm.gemini - ERROR - gemini_client.py:87 - Gemini generation failed: Error calling model 'gemini-2.0-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 30.616731181s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+2026-03-29 08:24:29 - drug_repurposing.llm.fallback - WARNING - fallback_llm.py:53 - Gemini failed (Error calling model 'gemini-2.0-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 30.616731181s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}); trying Groq/Ollama if configured.
+2026-03-29 08:24:32 - drug_repurposing.llm.groq - INFO - groq_client.py:46 - Generated 4060 characters with Groq
+2026-03-29 08:24:32 - drug_repurposing.llm.fallback - INFO - fallback_llm.py:58 - Response generated via Groq (fallback).
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1162 - Generated synthesis (4060 characters)
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1182 - Finalizing results...
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1204 - ============================================================
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1205 - Search Complete: Ethanol
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1206 - Execution Time: 150.70s
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1207 - Total Evidence: 316 items
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1208 - Repurposing Opportunities: 126
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1209 - Enhanced Opportunities: 126
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1210 - Errors: 0
+2026-03-29 08:24:32 - drug_repurposing.graph.nodes - INFO - nodes.py:1211 - ============================================================
+2026-03-29 08:24:32 - drug_repurposing.api.search - INFO - search.py:129 - Search completed for Ethanol: 126 indications found, execution time: 150.70s
+2026-03-29 08:24:32 - drug_repurposing.cache - INFO - cache_manager.py:102 - Cached result for: Ethanol
+2026-03-29 08:24:32 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 08:24:32 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 08:24:36 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 08:31:37 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:31:37 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: fa1c7570-dace-40cb-b1dc-5e9520a076a5
+2026-03-29 08:31:37 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 08:31:37 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: bd10d0ab-f2ed-4c0d-8b90-4cc8b2a74639
+2026-03-29 15:03:09 - drug_repurposing.websocket - INFO - websocket.py:51 - WebSocket ConnectionManager initialized
+2026-03-29 15:03:09 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 15:03:09 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-29 15:03:09 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 15:03:09 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 15:03:09 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-29 15:03:09 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-29 15:05:10 - drug_repurposing.api.search - INFO - search.py:82 - Search request received for: Ethanol
+2026-03-29 15:05:10 - drug_repurposing.cache - INFO - cache_manager.py:76 - Cache hit: Ethanol (age: 24189s)
+2026-03-29 15:05:10 - drug_repurposing.api.search - INFO - search.py:91 - Cache hit for: Ethanol
+2026-03-29 15:05:10 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: 3afc7278-34e8-4bd8-83d9-8f29968baa17
+2026-03-29 15:05:10 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: 3afc7278-34e8-4bd8-83d9-8f29968baa17
+2026-03-29 15:05:10 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: 3afc7278-34e8-4bd8-83d9-8f29968baa17
+2026-03-29 15:05:14 - drug_repurposing.websocket - INFO - websocket.py:63 - WebSocket connected: 3afc7278-34e8-4bd8-83d9-8f29968baa17
+2026-03-29 15:05:49 - drug_repurposing.api.export - INFO - export.py:57 - [AnyIO worker thread] PDF export requested for: Ethanol
+2026-03-29 15:05:49 - drug_repurposing.api.export - INFO - export.py:66 - [AnyIO worker thread] Starting PDF generation...
+2026-03-29 15:05:49 - drug_repurposing.pdf_generator - INFO - html_pdf_generator.py:173 - [AnyIO worker thread] Starting HTML-based PDF generation
+2026-03-29 15:05:49 - drug_repurposing.pdf_generator - INFO - html_pdf_generator.py:86 - [AnyIO worker thread] Spawning PDF subprocess...
+2026-03-29 15:05:50 - drug_repurposing.pdf_generator - ERROR - html_pdf_generator.py:110 - [AnyIO worker thread] Subprocess stderr: 
+2026-03-29 15:05:50 - drug_repurposing.pdf_generator - ERROR - html_pdf_generator.py:115 - [AnyIO worker thread] Subprocess error: Executable doesn't exist at /Users/bhuvesh/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-03-29 15:05:50 - drug_repurposing.pdf_generator - ERROR - html_pdf_generator.py:117 - [AnyIO worker thread] Subprocess traceback:
+Traceback (most recent call last):
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/services/repurpose/utils/pdf_subprocess.py", line 76, in main
+    pdf_bytes = generate_pdf_from_html(html_content)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/services/repurpose/utils/pdf_subprocess.py", line 32, in generate_pdf_from_html
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14806, in launch
+    self._sync(
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 95, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 62, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 492, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 100, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.Error: Executable doesn't exist at /Users/bhuvesh/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-03-29 15:05:50 - drug_repurposing.pdf_generator - ERROR - html_pdf_generator.py:152 - [AnyIO worker thread] PDF subprocess failed after 1.74s: RuntimeError: PDF subprocess failed: Executable doesn't exist at /Users/bhuvesh/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-03-29 15:05:50 - drug_repurposing.api.export - ERROR - export.py:104 - [AnyIO worker thread] PDF export failed after 1.84s: PDF subprocess failed: Executable doesn't exist at /Users/bhuvesh/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Traceback (most recent call last):
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/routes/repurpose/export.py", line 67, in export_pdf
+    pdf_buffer = generate_pdf_report(result)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/services/repurpose/utils/html_pdf_generator.py", line 326, in generate_pdf_report
+    return generate_pdf(result)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/services/repurpose/utils/html_pdf_generator.py", line 204, in generate_pdf
+    pdf_bytes = _generate_pdf_via_subprocess(html_content)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bhuvesh/Case Study/EY PharmAI/backend/app/services/repurpose/utils/html_pdf_generator.py", line 118, in _generate_pdf_via_subprocess
+    raise RuntimeError(f"PDF subprocess failed: {error_msg}")
+RuntimeError: PDF subprocess failed: Executable doesn't exist at /Users/bhuvesh/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-03-29 15:05:55 - drug_repurposing.api.export - INFO - export.py:240 - [AnyIO worker thread] Excel export requested for: Ethanol
+2026-03-29 15:05:55 - drug_repurposing.api.export - INFO - export.py:245 - [AnyIO worker thread] Starting Excel generation...
+2026-03-29 15:05:55 - drug_repurposing.archive - INFO - report_archive_manager.py:77 - Archived report: a299c252-8e39-4d82-aac5-a3481ae83f36_Ethanol_20260329_150555.xlsx (16,926 bytes)
+2026-03-29 15:05:55 - drug_repurposing.api.export - INFO - export.py:262 - [AnyIO worker thread] Excel generated: Ethanol_repurposing_report.xlsx (16,926 bytes) in 0.32s
+2026-03-29 15:05:59 - drug_repurposing.api.export - INFO - export.py:297 - JSON export requested for: Ethanol
+2026-03-29 15:06:16 - drug_repurposing.websocket - INFO - websocket.py:82 - WebSocket disconnected: 3afc7278-34e8-4bd8-83d9-8f29968baa17
+2026-03-29 15:06:16 - drug_repurposing.websocket - INFO - websocket.py:220 - Client disconnected: 3afc7278-34e8-4bd8-83d9-8f29968baa17

@@ -1,0 +1,12 @@
+2026-03-25 12:57:21 - drug_repurposing.websocket - INFO - websocket.py:51 - WebSocket ConnectionManager initialized
+2026-03-25 12:57:21 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
+2026-03-25 12:57:21 - drug_repurposing.conversations - INFO - conversation_manager.py:22 - Conversation manager initialized: data/conversations
+2026-03-25 12:57:21 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-25 12:57:21 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-25 12:57:21 - drug_repurposing.archive - INFO - report_archive_manager.py:29 - Report archive initialized: data/reports
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:30 - Cache manager initialized: data/cache
+2026-03-25 12:57:21 - drug_repurposing.cache - INFO - cache_manager.py:31 - Cache TTL: 604800 seconds (7.0 days)
