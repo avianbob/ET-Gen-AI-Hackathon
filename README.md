@@ -66,7 +66,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-cd "~/Downloads/ET-Gen-AI-Hackathon-Team-bhuvesh18"
+cd "~/Downloads/ET-Gen-AI-Hackathon"
 ```
 
 ### 2. Backend Setup (backend)
